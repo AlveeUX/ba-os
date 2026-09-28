@@ -174,7 +174,7 @@ status: empty
 | | | | | |
 
 ## Integrations [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 | System | Direction (in/out) | Data | Failure behaviour | DEP / REQ |
 | --- | --- | --- | --- | --- |

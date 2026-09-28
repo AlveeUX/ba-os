@@ -116,6 +116,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Five of the 11 Define sections are now reviewed. RULE-007 and RULE-027 (date changes) and RULE-020 and RULE-028 (data deletion) are still in conflict (Q-040, Q-041); RULE-006, RULE-016, RULE-021, RULE-023 and RULE-033 have open questions.
 
+### DEC-011 · Reviewed 03-define.md section "Integrations"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Integrations" section of `03-define.md`, including its `UNKNOWN` failure behaviours.
+- items: 03-define.md "Integrations" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (DEP-001, DEP-004, DEP-006, REQ-013, REQ-029, REQ-036, REQ-038, REQ-042, REQ-045, REQ-051, REQ-052, REQ-063, RULE-011, RULE-017, RISK-001, RISK-007)
+- alternatives: none
+- impact: Six of the 11 Define sections are now reviewed. The payment provider, the sync method and the domain are not decided yet (DEP-001, RISK-007, REQ-063), and most failure behaviours are `UNKNOWN`.
+
 ## Change log (CHG)
 
 <!--
