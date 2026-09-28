@@ -136,6 +136,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Seven of the 11 Define sections are now reviewed. Several "today" cells are `Not stated`, and whether the phone and walk-in payment steps describe today's practice or the new platform is still open (check 4, C4-27).
 
+### DEC-013 · Reviewed 03-define.md section "Key journeys"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Key journeys" section of `03-define.md` (eight journeys, each with at least one failure path), including steps and failure paths that are still `UNKNOWN`.
+- items: 03-define.md "Key journeys" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (REQ-002, REQ-003, REQ-009, REQ-013, REQ-016, REQ-017, REQ-019, REQ-028, REQ-029, REQ-030, REQ-031, REQ-036, REQ-040, REQ-047, REQ-048, REQ-049, REQ-050, REQ-064, REQ-065, REQ-066, REQ-068, REQ-073, REQ-074, REQ-075, RULE-006, RULE-007, RULE-012, RULE-014, RULE-015, RULE-016, RULE-017, RULE-018, RULE-027, RULE-033, RULE-034, RULE-035)
+- alternatives: none
+- impact: Eight of the 11 Define sections are now reviewed. Who takes phone bookings after launch, a declined card, staff password reset and the booking-site double-booking rule are still `UNKNOWN`; J3 and J4 rest on the phone and walk-in answer flagged in check 4 (C4-27).
+
 ## Change log (CHG)
 
 <!--

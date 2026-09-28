@@ -75,7 +75,7 @@ Five roles, from the client's answer (REQ-064). Which role may do each action in
 Open on roles: which round-2 actions each role may do (Q-064); two-factor login for managers and who creates the managers' own logins (Q-050); who may send reminders (Q-051); how many staff logins there will be (round 1 said about 1 to 2 staff per hotel, round 3 says "many"). Managers create staff logins with a temporary password, and staff must change it at first login (REQ-048, REQ-049).
 
 ## Key journeys [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 Each journey: entry point → steps → decisions → end states. Steps the client has not described are `UNKNOWN`.
 
