@@ -132,7 +132,7 @@ Each journey: entry point → steps → decisions → end states. Steps the clie
 Guest sign-up, sign-in, password reset and closing an account (REQ-041 to REQ-044) are not drafted as journeys; they are not in the client's December answers (Q-070).
 
 ## Future workflows [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 | Workflow | Today | After launch | Items |
 | --- | --- | --- | --- |

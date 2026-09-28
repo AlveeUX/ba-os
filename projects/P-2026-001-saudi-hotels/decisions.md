@@ -126,6 +126,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Six of the 11 Define sections are now reviewed. The payment provider, the sync method and the domain are not decided yet (DEP-001, RISK-007, REQ-063), and most failure behaviours are `UNKNOWN`.
 
+### DEC-012 · Reviewed 03-define.md section "Future workflows"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Future workflows" section of `03-define.md`, including cells that say "Not stated" and the phone and walk-in payment steps flagged in check 4 (C4-27).
+- items: 03-define.md "Future workflows" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (PRB-004, PRB-005, PRB-006, REQ-002, REQ-003, REQ-007, REQ-026, REQ-028, REQ-029, REQ-030, REQ-031, REQ-039, REQ-045, REQ-050, REQ-054, REQ-057, REQ-063, RULE-011, RULE-012, RULE-016, RULE-024, RULE-033, RULE-034, RULE-035, DEP-011)
+- alternatives: none
+- impact: Seven of the 11 Define sections are now reviewed. Several "today" cells are `Not stated`, and whether the phone and walk-in payment steps describe today's practice or the new platform is still open (check 4, C4-27).
+
 ## Change log (CHG)
 
 <!--
