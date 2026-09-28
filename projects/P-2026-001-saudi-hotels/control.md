@@ -8,9 +8,9 @@ Last updated: 2026-09-28
 
 | | |
 | --- | --- |
-| Current phase | 1. Intake (gate not started) |
-| Next required action | Resolve the top findings from check 2. The three high ones need answers from Yusuf: **C2-01** (goal 30% or 50%: Q-035, Q-057), **C2-02** (staff roles and permissions: Q-037, Q-038, Q-039, Q-033) and **C2-03** (Saudi rules: Q-049, for his accountant). Two quick fixes are yours: **C2-08** (which deadline counts: RULE-001 or RULE-010) and **C2-14** (RULE-009 states a guess as fact). Gate 1 can be recorded at any time with `/ba-approve gate 1 <result>`: criteria 1 to 4 are met, and the fifth is the gate decision itself. |
-| Blockers | No gate is `BLOCKED` and no dependency blocks Phase 1. Three high findings from check 2 are open: **C2-01** (the headline goal is contested and its starting point is a guess), **C2-02** (the staff roles and permissions contradict each other, and the December booking list depends on them) and **C2-03** (Saudi rules on VAT, ZATCA invoicing and privacy are unknown, with no date for the accountant's answer). They do not block Gate 1 but must be resolved before Define and Shape. There are also 8 open `CONFLICT` items; each has a question (Q-033 to Q-042). |
+| Current phase | 2. Discover (gate not started). Phase 1 ended PARTIAL on 2026-09-28 (GATE-001) |
+| Next required action | Resolve the top findings from check 2, which you accepted as open risks at Gate 1. Send Yusuf the questions behind the three high ones: **C2-01** (goal 30% or 50%: Q-035, Q-057), **C2-02** (staff roles and permissions: Q-037, Q-038, Q-039, Q-033) and **C2-03** (Saudi rules: Q-049, for his accountant). When he answers, save the answers unchanged in `inputs/` and run `/ba-extract`. Meanwhile `02-discover.md` has 8 empty sections that Gate 2 needs (Stakeholders, Current state, Current workflows, Current systems, Constraints, Known vs unknown summary, Research plan, Research summary); ask me to draft them. |
+| Blockers | No gate is `BLOCKED` and no dependency blocks Phase 2. Three high findings from check 2 are open: **C2-01** (the headline goal is contested and its starting point is a guess), **C2-02** (the staff roles and permissions contradict each other, and the December booking list depends on them) and **C2-03** (Saudi rules on VAT, ZATCA invoicing and privacy are unknown, with no date for the accountant's answer). They are the risks accepted in GATE-001. They must be resolved before Define and Shape. There are also 8 open `CONFLICT` items; each has a question (Q-033 to Q-042). |
 | Overall confidence | low — 95 of 171 open items are `KNOWN` (56%) and every quote was checked against `inputs/`, but no item is `REVIEWED` yet (only the profile is approved), there are 8 open conflicts and 29 unanswered questions, 3 high findings are open, and 47 of 61 requirements have no priority. The December scope (Q-034) is not settled, and the 4-month and end-of-December deadlines are not yet reconciled (C2-08). |
 
 ## Project
@@ -88,6 +88,7 @@ Also important, but not MVP: Q-035 (30% or 50% target, conflict GOAL-003), Q-049
 
 | ID | Date | Decision |
 | --- | --- | --- |
+| GATE-001 | 2026-09-28 | Phase 1 Intake: PARTIAL. Open risks: C2-01 (goal 30% or 50%), C2-02 (staff roles contradict), C2-03 (Saudi rules unknown). Reason not stated |
 | DEC-001 | 2026-09-28 | Approved the project profile (`profile.md` AI-DRAFT → APPROVED). Reason not stated |
 
 ## Input log
@@ -97,10 +98,11 @@ Also important, but not MVP: Q-035 (30% or 50% target, conflict GOAL-003), Q-049
 | brief-2026-09-28.md | 2026-09-28 | 2026-09-28 |
 | client-answers-2026-09-28.md | 2026-09-28 | 2026-09-28 |
 | client-answers-round-2-2026-09-28.md | 2026-09-28 | 2026-09-28 |
+| client-answers-round-3-2026-09-28.md | 2026-09-28 | 2026-09-28 |
 
 ## Last check
 
-Run 2 · 2026-09-28 · Phase 1 (Intake) · 24 findings (high 3, medium 12, low 9) · 51 items became AI-CHECKED · Gate suggestion: ready to PASS once the profile is reviewed and approved and you record the gate decision · Report: `checks/check-2-2026-09-28.md` (run 1: `checks/check-1-2026-09-28.md`). The profile has been approved since (DEC-001); the gate decision is still to be recorded.
+Run 3 · 2026-09-28 · Phase 2 (Discover) · 27 findings (high 1, medium 15, low 11) · 16 items became AI-CHECKED · Gate suggestion: not ready yet (refresh `02-discover.md` and settle how the questions that block Define are marked; then PARTIAL is possible) · Report: `checks/check-3-2026-09-28.md` (earlier: `checks/check-2-2026-09-28.md`, `checks/check-1-2026-09-28.md`)
 
 ## Notes
 

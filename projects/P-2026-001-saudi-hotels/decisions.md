@@ -26,6 +26,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Gate 1 criterion "Size and depth in `profile.md` are reviewed" is now met. The gate itself is not recorded yet; that needs `/ba-approve gate 1 <result>`.
 
+### DEC-002 · Reviewed 02-discover.md section "Stakeholders"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Stakeholders" section of `02-discover.md` as refreshed after round 3.
+- items: 02-discover.md "Stakeholders" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-3-2026-09-28.md`; `items.md` (REQ-064, DEP-009 to DEP-012)
+- alternatives: none
+- impact: One of the 8 Discover sections is now reviewed. Check 3 finding C3-16 stays open until `/ba-check` is run again.
+
 ## Change log (CHG)
 
 <!--
