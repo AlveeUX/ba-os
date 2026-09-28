@@ -67,7 +67,7 @@ Only what the client has said is written. Steps the client has not described are
 9. **Website content changes:** who edits the current site and how is UNKNOWN.
 
 ## Current systems, data and integrations [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 | System / tool | Used for | Data it holds | Connects to | Source |
 | --- | --- | --- | --- | --- |
