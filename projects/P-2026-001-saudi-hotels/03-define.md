@@ -151,7 +151,7 @@ status: AI-DRAFT
 | The old website | Live, slow and outdated | Turned off on launch day, the domain is in conflict | REQ-054, REQ-063 |
 
 ## Business rules [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 All 32 active RULE items, each listed once. Open points are noted.
 

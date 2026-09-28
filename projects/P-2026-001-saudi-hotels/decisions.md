@@ -106,6 +106,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Four of the 11 Define sections are now reviewed. The December exclusions stay proposals until Q-070 is answered.
 
+### DEC-010 · Reviewed 03-define.md section "Business rules"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Business rules" section of `03-define.md`, which lists all 32 active RULE items by kind, including rules still in conflict or with open questions.
+- items: 03-define.md "Business rules" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (RULE-001 to RULE-035, active ones)
+- alternatives: none
+- impact: Five of the 11 Define sections are now reviewed. RULE-007 and RULE-027 (date changes) and RULE-020 and RULE-028 (data deletion) are still in conflict (Q-040, Q-041); RULE-006, RULE-016, RULE-021, RULE-023 and RULE-033 have open questions.
+
 ## Change log (CHG)
 
 <!--
