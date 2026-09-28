@@ -49,7 +49,7 @@ status: REVIEWED
 - **Later** (proposed): admin dashboard, monthly reports, loyalty discount, mobile app, extras, promotions, and probably invoices (REQ-005, REQ-007, REQ-032 to REQ-035, REQ-039).
 
 ## Non-goals [light]
-status: AI-DRAFT
+status: REVIEWED
 
 The client has not stated any non-goals in so many words. What follows comes from his "not now" and "no" answers.
 

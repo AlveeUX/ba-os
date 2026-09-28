@@ -96,6 +96,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Three of the 11 Define sections are now reviewed. The December list is still proposed (Q-070 open) and the 50% target (GOAL-004) is not yet confirmed with the client.
 
+### DEC-009 · Reviewed 03-define.md section "Non-goals"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Non-goals" section of `03-define.md`. The client has stated no non-goals himself; the section is built from his "not now" and "no" answers.
+- items: 03-define.md "Non-goals" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (REQ-005, REQ-007, REQ-032, REQ-033, REQ-034, REQ-035, REQ-039, REQ-054, RULE-009, REQ-059)
+- alternatives: none
+- impact: Four of the 11 Define sections are now reviewed. The December exclusions stay proposals until Q-070 is answered.
+
 ## Change log (CHG)
 
 <!--
