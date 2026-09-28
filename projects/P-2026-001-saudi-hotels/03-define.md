@@ -26,7 +26,7 @@ Supporting targets the client gave, which are requirements, not goals: 200 booki
 GOAL-004 is `AI-DRAFT`. It replaces GOAL-002 (30%) and GOAL-003 (the 30% or 50% conflict), which were superseded on the strength of the answer to Q-035. Gate 3 needs a goal with a success measure to be `REVIEWED`; confirm the 50% with Yusuf first (check 4, C4-02).
 
 ## Root causes [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 The client links the commission cost to guests not booking direct. Why guests choose the booking sites over the client's own site is not stated and was not researched.
 

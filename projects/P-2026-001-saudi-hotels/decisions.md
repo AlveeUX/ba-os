@@ -76,6 +76,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: One of the 11 Define sections is now reviewed. Gate 3 also needs a goal with a success measure to be `REVIEWED`; GOAL-004 is still `AI-DRAFT` and its 50% is not yet confirmed with the client (check 4, C4-02).
 
+### DEC-007 · Reviewed 03-define.md section "Root causes"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Root causes" section of `03-define.md`, including its `UNKNOWN` (why guests choose the booking sites) and its inferred cause (double bookings).
+- items: 03-define.md "Root causes" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (PRB-003, PRB-004, PRB-005, PRB-006, RISK-001, ASM-003)
+- alternatives: none
+- impact: Two of the 11 Define sections are now reviewed. Why guests choose the booking sites over the client's own site is still `UNKNOWN`; no question about it is in `items.md` yet.
+
 ## Change log (CHG)
 
 <!--
