@@ -36,6 +36,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: One of the 8 Discover sections is now reviewed. Check 3 finding C3-16 stays open until `/ba-check` is run again.
 
+### DEC-003 · Reviewed 02-discover.md section "Current state"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Current state" section of `02-discover.md` as refreshed after round 3.
+- items: 02-discover.md "Current state" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-3-2026-09-28.md`; `items.md` (PRB-004, PRB-006, ASM-003, REQ-055, RULE-034, RULE-035)
+- alternatives: none
+- impact: Two of the 8 Discover sections are now reviewed. Check 3 finding C3-16 stays open until `/ba-check` is run again.
+
 ## Change log (CHG)
 
 <!--

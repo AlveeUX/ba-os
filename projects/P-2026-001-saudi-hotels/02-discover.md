@@ -25,7 +25,7 @@ status: REVIEWED
 | The payment service used today (name UNKNOWN) and the future payment provider | partner | Payment links and card charges today (Q-068). A provider recommendation is expected from the project team (DEP-001) | UNKNOWN | DEP-001, Q-068 |
 
 ## Current state [light]
-status: AI-DRAFT
+status: REVIEWED
 
 - **Six hotels in six cities, 380 rooms in total** (calculated from REQ-058): Jeddah Grand, Riyadh Palace, Dammam Beach, Makkah Comfort (only during Hajj season, RULE-022), Medina Rest and Abha Heights. Round 1 called them "all 3-star" and named "Al Riyadh and Al Jeddah" as flagship; round 2 names Jeddah Grand as the flagship. Whether these are the same hotels is open (Q-053).
 - **Website:** an existing site, "slow, looks outdated, not mobile-friendly" (PRB-003). It is hosted with a small Saudi hosting company. Guests cannot book direct on it (PRB-005). What should be kept: photos, location and contact details. Descriptions move over and are refreshed, and about 50 four- and five-star reviews move over (REQ-052, REQ-051). Its domain is unclear (REQ-063).
