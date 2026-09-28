@@ -54,3 +54,11 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - waiting-on: (for BLOCKED)
 - check-report: checks/<file>
 -->
+
+### GATE-001 · Phase 1 Intake — PARTIAL
+- date: 2026-09-28
+- decided-by: the BA
+- result: PARTIAL
+- reason: not stated
+- open-risks: C2-01 (first-year goal is 30% or 50%, and the starting share is a guess); C2-02 (staff roles and permissions contradict each other); C2-03 (Saudi rules on VAT, ZATCA invoicing and privacy are unknown)
+- check-report: checks/check-2-2026-09-28.md

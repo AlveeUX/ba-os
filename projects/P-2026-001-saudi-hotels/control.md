@@ -9,9 +9,9 @@ Last updated: 2026-09-28
 | | |
 | --- | --- |
 | Current phase | 1. Intake (gate not started) |
-| Next required action | Review `profile.md` and run `/ba-approve profile`. The profile is out of date (finding C2-11): it still shows no decision maker, no budget, "within 4 months" as the only deadline, and "UNKNOWN" for who signs off. Round 2 has given most of these, so update it first. Then resolve the three high findings from check 2 by sending questions to Yusuf: **C2-01** (goal 30% or 50%: Q-035, Q-057), **C2-02** (staff roles: Q-037, Q-038, Q-039, Q-033) and **C2-03** (Saudi rules: Q-049 to the accountant). After that, record the gate with `/ba-approve gate 1 <result>`. |
+| Next required action | Resolve the top findings from check 2. The three high ones need answers from Yusuf: **C2-01** (goal 30% or 50%: Q-035, Q-057), **C2-02** (staff roles and permissions: Q-037, Q-038, Q-039, Q-033) and **C2-03** (Saudi rules: Q-049, for his accountant). Two quick fixes are yours: **C2-08** (which deadline counts: RULE-001 or RULE-010) and **C2-14** (RULE-009 states a guess as fact). Gate 1 can be recorded at any time with `/ba-approve gate 1 <result>`: criteria 1 to 4 are met, and the fifth is the gate decision itself. |
 | Blockers | No gate is `BLOCKED` and no dependency blocks Phase 1. Three high findings from check 2 are open: **C2-01** (the headline goal is contested and its starting point is a guess), **C2-02** (the staff roles and permissions contradict each other, and the December booking list depends on them) and **C2-03** (Saudi rules on VAT, ZATCA invoicing and privacy are unknown, with no date for the accountant's answer). They do not block Gate 1 but must be resolved before Define and Shape. There are also 8 open `CONFLICT` items; each has a question (Q-033 to Q-042). |
-| Overall confidence | low — 95 of 171 open items are `KNOWN` (56%) and every quote was checked against `inputs/`, but nothing is `REVIEWED` yet, there are 8 open conflicts and 29 unanswered questions, 3 high findings are open, and 47 of 61 requirements have no priority. The December scope (Q-034) is not settled, and the 4-month and end-of-December deadlines are not yet reconciled (C2-08). |
+| Overall confidence | low — 95 of 171 open items are `KNOWN` (56%) and every quote was checked against `inputs/`, but no item is `REVIEWED` yet (only the profile is approved), there are 8 open conflicts and 29 unanswered questions, 3 high findings are open, and 47 of 61 requirements have no priority. The December scope (Q-034) is not settled, and the 4-month and end-of-December deadlines are not yet reconciled (C2-08). |
 
 ## Project
 
@@ -19,7 +19,7 @@ Last updated: 2026-09-28
 | --- | --- |
 | Project | saudi hotels |
 | Client | Yusuf (company name UNKNOWN). Makes the final decisions (RULE-002). His team: Layla (translation and content, 5 hours a week), Fatima (his manager: testing and approval, 10 hours a week, day-to-day support after launch), Yusuf (about 5 hours a week) (DEP-009, DEP-010, DEP-011) |
-| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile still `AI-DRAFT`) |
+| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile approved 2026-09-28, DEC-001) |
 | Business objective | GOAL-002: increase direct bookings to 30% of all bookings within the first year. **GOAL-003 is an open conflict**: round 2 says 50% (Q-035). Direct share today is about 10%, a client estimate (ASM-003). Booking sites take 15% commission (PRB-005). Status `AI-DRAFT` |
 | Deadline | End of December is the "hard deadline" and the go-live date (RULE-010, about 13 weeks from 2026-09-28, calculated). "4 months maximum" (RULE-001) is still on file and is later; the two are not yet reconciled (C2-08). Features can follow in January |
 | Budget signal | About 120,000 SAR (~$32,000), "flexible if it's worth it" (RULE-003). It includes hosting, payment fees, translation, running the platform and first-year support (RULE-019). How it splits is not known (Q-048, RISK-005) |
@@ -28,7 +28,7 @@ Last updated: 2026-09-28
 
 | Phase | Depth | Gate result | Date |
 | --- | --- | --- | --- |
-| 1. Intake | standard | not started | |
+| 1. Intake | standard | PARTIAL | 2026-09-28 |
 | 2. Discover | standard | not started | |
 | 3. Define | standard | not started | |
 | 4. Shape | deep | not started | |
@@ -86,7 +86,9 @@ Also important, but not MVP: Q-035 (30% or 50% target, conflict GOAL-003), Q-049
 
 ## Recent decisions
 
-none yet. `decisions.md` has no entries.
+| ID | Date | Decision |
+| --- | --- | --- |
+| DEC-001 | 2026-09-28 | Approved the project profile (`profile.md` AI-DRAFT → APPROVED). Reason not stated |
 
 ## Input log
 
@@ -98,7 +100,7 @@ none yet. `decisions.md` has no entries.
 
 ## Last check
 
-Run 2 · 2026-09-28 · Phase 1 (Intake) · 24 findings (high 3, medium 12, low 9) · 51 items became AI-CHECKED · Gate suggestion: ready to PASS once the profile is reviewed and approved and you record the gate decision · Report: `checks/check-2-2026-09-28.md` (run 1: `checks/check-1-2026-09-28.md`)
+Run 2 · 2026-09-28 · Phase 1 (Intake) · 24 findings (high 3, medium 12, low 9) · 51 items became AI-CHECKED · Gate suggestion: ready to PASS once the profile is reviewed and approved and you record the gate decision · Report: `checks/check-2-2026-09-28.md` (run 1: `checks/check-1-2026-09-28.md`). The profile has been approved since (DEC-001); the gate decision is still to be recorded.
 
 ## Notes
 
