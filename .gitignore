@@ -1,0 +1,14 @@
+# Confidential client projects never go to an online backup
+projects/_confidential/*
+!projects/_confidential/README.md
+
+# Which project is active is personal, not part of the record
+projects/active.md
+
+# Personal Claude Code settings
+.claude/settings.local.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
