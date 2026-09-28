@@ -38,7 +38,7 @@ The client links the commission cost to guests not booking direct. Why guests ch
 | Double bookings have to be sorted out by hand | Availability is not shared between the booking sites and the spreadsheet (inferred from PRB-006 and RISK-001) | PRB-006: "Check the email timestamps — first one wins". How often it happens is UNKNOWN |
 
 ## Desired future state [light]
-status: AI-DRAFT
+status: REVIEWED
 
 - Guests search all six hotels or one, book and pay a deposit online, and manage their booking themselves, in Arabic first and English second (REQ-009, REQ-002, REQ-003, REQ-017, REQ-053, NEED-003).
 - Bookings are confirmed automatically once payment clears, and the guest gets an email (REQ-028).

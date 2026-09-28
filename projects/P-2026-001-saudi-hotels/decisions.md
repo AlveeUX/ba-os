@@ -86,6 +86,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Two of the 11 Define sections are now reviewed. Why guests choose the booking sites over the client's own site is still `UNKNOWN`; no question about it is in `items.md` yet.
 
+### DEC-008 · Reviewed 03-define.md section "Desired future state"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Desired future state" section of `03-define.md`, including its proposed December list.
+- items: 03-define.md "Desired future state" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `items.md` (GOAL-004, NEED-003, REQ-002, REQ-003, REQ-009, REQ-019, REQ-026, REQ-028, REQ-030, REQ-048, REQ-053, REQ-064, REQ-065, REQ-066)
+- alternatives: none
+- impact: Three of the 11 Define sections are now reviewed. The December list is still proposed (Q-070 open) and the 50% target (GOAL-004) is not yet confirmed with the client.
+
 ## Change log (CHG)
 
 <!--
