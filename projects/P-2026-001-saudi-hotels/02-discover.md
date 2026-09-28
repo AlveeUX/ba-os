@@ -40,7 +40,7 @@ status: REVIEWED
 - **UNKNOWN today:** which payment service and card machine are used (Q-068), whether existing future bookings must be entered into the new platform (Q-069), how a phone booking is checked against availability, who updates the current website, and what reports exist.
 
 ## Current workflows [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 Only what the client has said is written. Steps the client has not described are `UNKNOWN`.
 
