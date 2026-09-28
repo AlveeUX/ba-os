@@ -66,6 +66,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Four of the 8 Discover sections are now reviewed. Check 3 finding C3-16 stays open until `/ba-check` is run again.
 
+### DEC-006 · Reviewed 03-define.md section "Problem statement"
+- date: 2026-09-28
+- decided-by: the BA
+- decision: Reviewed the "Problem statement" section of `03-define.md`.
+- items: 03-define.md "Problem statement" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-3-2026-09-28.md`; `items.md` (PRB-003, PRB-004, PRB-005, PRB-006, ASM-003, NEED-003, GOAL-004)
+- alternatives: none
+- impact: One of the 11 Define sections is now reviewed. Gate 3 also needs a goal with a success measure to be `REVIEWED`; GOAL-004 is still `AI-DRAFT` and its 50% is not yet confirmed with the client (check 4, C4-02).
+
 ## Change log (CHG)
 
 <!--
@@ -102,3 +112,11 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - reason: not stated
 - open-risks: C2-01 (first-year goal is 30% or 50%, and the starting share is a guess); C2-02 (staff roles and permissions contradict each other); C2-03 (Saudi rules on VAT, ZATCA invoicing and privacy are unknown)
 - check-report: checks/check-2-2026-09-28.md
+
+### GATE-002 · Phase 2 Discover — PARTIAL
+- date: 2026-09-28
+- decided-by: the BA
+- result: PARTIAL
+- reason: not stated
+- open-risks: C4-01 (Saudi rules on VAT, ZATCA e-invoicing, privacy and card handling are unknown; waiting on the accountant, Q-049 and DEP-012)
+- check-report: checks/check-4-2026-09-28.md
