@@ -220,3 +220,11 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - reason: not stated
 - open-risks: C4-01 (Saudi rules on VAT, ZATCA e-invoicing, privacy and card handling are unknown; waiting on the accountant, Q-049 and DEP-012)
 - check-report: checks/check-4-2026-09-28.md
+
+### GATE-003 · Phase 3 Define — PARTIAL
+- date: 2026-09-29
+- decided-by: the BA
+- result: PARTIAL
+- reason: Saudi tax rules still pending
+- open-risks: C8-01 (Saudi rules on VAT, ZATCA e-invoicing, personal data and card handling are still unknown; Ahmed's contact details have been promised in rounds 3, 4 and 5 without arriving, DEP-012, Q-049)
+- check-report: checks/check-8-2026-09-29.md

@@ -57,7 +57,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-3-2026-09-28.md (Section A, answer headed "Q-035")
 - quote: "50% is what we want to reach by end of year one, not by December."
 - why: The client also said "Count it by money, not by number of bookings" and "Year one starts when we launch, so if we launch in December, year one runs Dec 2026 to Dec 2027." Direct is defined in RULE-029. The 10% direct share today is by number of bookings (about 60 of about 600, ASM-003), not by money. Round 4 (Q-062) gives the share by money: "maybe 8-10%", and reconfirms 50% (not 30%) as the year-one target. Round 5 (Q-061) adds interim milestones: 15-20% direct by end of December 2026, 30% by end of Q1 2027 (31 March), 50% by end of year one, tracked monthly as (direct booking money) / (all booking money). Tracking monthly assumes some way to see revenue by channel each month; the platform's own reporting is not due until January (REQ-007, WONT for December), so how this is tracked in December and January is not yet stated.
-- flags: C7-16
+- flags: C8-16
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md. Replaces GOAL-002 and GOAL-003
   - 2026-09-29 why updated and blocked-by Q-062 removed (answered) from client answers, round 4
@@ -176,7 +176,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: client answer 2026-09-28 (Q-009, Q-010)
 - quote: "We need to view all bookings, see guest details, confirm or cancel them, track which ones have paid the deposit, and send reminders before arrival."
 - why: The reports part comes from Q-010: "We need to see per-hotel data and combined data." The users are head office, hotel managers and front desk staff (Q-004).
-- flags: C7-16
+- flags: C8-16
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-004, Q-009, Q-010: label ASSUMPTION → KNOWN, quote added, parent GOAL-001 → GOAL-002
@@ -210,7 +210,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client's definition of modern: "Modern means fast, mobile-first, simple to use." That is still not measurable (Q-019). Round 3 gives targets: pages load in under 3 seconds on a phone on 4G (REQ-072) and a booking takes no more than 5 steps (REQ-073).
 - priority: MVP (proposed from the client's first-version list in the answer to Q-007; to be confirmed)
 - acceptance: not drafted. The targets are in REQ-072 and REQ-073.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-002, Q-007: parent PRB-001 → PRB-003, priority set, blocked-by changed
@@ -229,7 +229,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - acceptance:
   - Given a guest has chosen a hotel, dates and a room type, when they enter their details and pay the deposit, then the booking is created and the room is no longer offered for those dates.
   - Given two guests want the last room, when both try to pay, then the first to complete payment gets it and the other is told the room is gone.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-003, Q-007, Q-013: parent NEED-001 → NEED-003, priority set, blocked-by changed
@@ -249,7 +249,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
   - Given a guest books 7 or more days before arrival, when they pay, then the deposit charged is 25% of the total and the rest is shown as due 2 days before arrival.
   - Given a guest books less than 7 days before arrival, when they pay, then the deposit charged is 50% of the total.
   - Given a payment fails, when the guest is told, then the booking is not confirmed and the room is held for 2 hours and then released.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-005, Q-006, Q-007: parent NEED-001 → NEED-003, priority set, blocked-by changed
@@ -267,7 +267,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client says accounts are optional for booking (REQ-016). What accounts are for is described in REQ-017. Whether accounts are in the first version is not stated.
 - priority: MVP (client answer, round 4, Q-070: "Guest accounts and sign-in: YES, needed. Guests need to be able to log back in and view their bookings.")
 - acceptance: not drafted. Sign-up, sign-in and password steps are not described (see Q-024).
-- flags: C7-03, C7-04, C7-18
+- flags: C8-03, C8-04, C8-18
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answer to Q-008: parent NEED-001 → NEED-003, blocked-by changed
@@ -285,7 +285,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Three roles will use it (REQ-023, REQ-024, REQ-025). Client on numbers: "We have 2 people at head office, and about 1-2 staff at each hotel." The client says it can come after the first version: "We can add the admin dashboard and reports later."
 - priority: WONT (proposed: the client says it "can wait a month or two"; for the December release)
 - acceptance: not drafted. What the dashboard shows is not described (see Q-015).
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-004, Q-007: why, priority and blocked-by changed
@@ -302,7 +302,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Umbrella item. Detail is in REQ-019, REQ-020, REQ-021 and REQ-022. Hotel managers handle cancellations for their own hotel: "Hotel managers should handle cancellations for their own hotel."
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See the detail items for the actions.
-- flags: C7-05, C7-10
+- flags: C8-05, C8-10
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answer to Q-009: why and blocked-by changed
@@ -340,7 +340,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 2 gives the reason: "80% of guests are Saudi" (Arabic first) and English for "international and expat guests", so the parent is NEED-003 (guests). Scope is "everything": website, emails, payment pages, dashboard and reports. The English should be "clear and professional". See REQ-053 for the order.
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. Which text is written by whom is not yet known (see Q-030).
-- flags: C7-04, C7-05, C7-10
+- flags: C8-04, C8-05, C8-10
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answer to Q-011: title, quote and blocked-by changed (scope is now "everything")
@@ -359,7 +359,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed from the client's first-version list in the answer to Q-007; to be confirmed)
 - acceptance:
   - Given a guest has chosen dates, number of guests and a room type, for one hotel or all six, when they search, then the results show available rooms with the price per night and the total price for the stay.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answer to Q-007 (answers pasted by the BA)
   - 2026-09-28 updated from client answer, round 2 (Section D, "Q-016"): why and acceptance
@@ -375,7 +375,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client also said "We manage everything centrally from the head office here." This replaces ASM-001.
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-028 for what differs between hotels.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answer to Q-003 (answers pasted by the BA). Replaces ASM-001
   - 2026-09-28 parent GOAL-002 → GOAL-004 after client answers, round 3
@@ -392,7 +392,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-053
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. Page content is not described (see Q-028).
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answer to Q-003 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -427,7 +427,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed because online payment is in the client's first-version list; to be confirmed)
 - acceptance:
   - Given a guest is paying a deposit, when they pay with a valid Visa or Mastercard credit card, then the payment succeeds and the booking shows the deposit as paid.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answer to Q-005 (answers pasted by the BA)
 
@@ -476,7 +476,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a guest who is not signed in has chosen a room, when they enter their details and pay, then the booking is created without creating an account.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created from client answer to Q-008 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -492,7 +492,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client also said "if they do, they can manage their reservations easily", which may mean only guests with an account (Q-024). Cancellation and date-change terms are in RULE-006 and RULE-007.
 - priority: MVP (client answer, round 4, Q-070: "View/cancel/change bookings online: YES. Guests should be able to cancel or change dates if it's within the cancellation window.")
 - acceptance: not drafted. Unclear who can do this (see Q-024).
-- flags: C7-03, C7-04, C7-09
+- flags: C8-03, C8-04, C8-09
 - history:
   - 2026-09-28 created from client answer to Q-008 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -510,7 +510,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-051
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. Channels and timing are not stated (see Q-025).
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answers to Q-008, Q-009 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -527,7 +527,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: the client lists "staff to see bookings in a simple list" for December; to be confirmed)
 - acceptance:
   - Given bookings exist at several hotels, when a head office user opens the bookings list, then all bookings from all 6 hotels are shown with guest details.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answer to Q-009 (answers pasted by the BA)
   - 2026-09-28 priority set from client answer, round 2 (Section A, "Q-015")
@@ -543,7 +543,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 2: bookings are confirmed automatically once payment clears (REQ-028) and "Manager can override" (REQ-046). Round 3: front desk staff may record phone cancellations, and only hotel managers change dates (REQ-069, RULE-031). Which roles may cancel is still open (Q-064).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-025.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answer to Q-009 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -562,7 +562,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a booking, when an authorised user opens it, then it shows whether the deposit has been paid.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answer to Q-009 (answers pasted by the BA)
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -577,7 +577,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: "Someone" and "quickly" are not defined. Front desk staff cannot change bookings (REQ-025), and hotel managers may not always be available. Round 2 gives a target: "Within 5 minutes if possible, or before the shift ends." Round 3: front desk staff may record it: "Record phone cancellation: YES".
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. Who does this and how fast is not stated (see Q-026).
-- flags: C7-04, C7-05, C7-10
+- flags: C8-04, C8-05, C8-10
 - history:
   - 2026-09-28 created from client answer to Q-009 (answers pasted by the BA)
   - 2026-09-28 why updated from client answer, round 2 (Section D, "Q-021")
@@ -597,7 +597,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a head office user, when they open the bookings list, then they see bookings from all 6 hotels and can change prices and availability.
-- flags: C7-05, C7-09, C7-10, C7-12
+- flags: C8-05, C8-09, C8-10, C8-12
 - history:
   - 2026-09-28 created from client answer to Q-004 (answers pasted by the BA)
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section B, "Q-037"): why
@@ -614,7 +614,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a manager of one hotel, when they open the bookings list, then they see only that hotel's bookings and can manage them.
-- flags: C7-05, C7-09, C7-10
+- flags: C8-05, C8-09, C8-10
 - history:
   - 2026-09-28 created from client answer to Q-004 (answers pasted by the BA)
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -648,7 +648,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Client on today's channels: "Most bookings come through Booking.com or Agoda." and "We also have a WhatsApp number where guests message us directly." How those bookings reach the platform is not stated.
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-017.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answer to Q-013 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -680,7 +680,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: "Staff can see it immediately in the system." Managers can override (REQ-046).
 - priority: MVP (proposed: "payment confirmation" is in the client's December list; to be confirmed)
 - acceptance: Given a guest has paid the deposit, when the payment clears, then the booking shows Confirmed and the guest receives a confirmation email.
-- flags: C7-03, C7-09
+- flags: C8-03, C8-09
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -694,7 +694,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client accepts typing them in by hand for the first month if this is too complex (REQ-031). How sync would work has not been researched (RISK-007).
 - priority: SHOULD (proposed: the client says "Ideally" and accepts a manual fallback)
 - acceptance: not drafted. The method and sites are not yet known (see RISK-007).
-- flags: C7-16
+- flags: C8-16
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -708,7 +708,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 3 confirms it: "Type in phone bookings: YES" and "Screen to type bookings: YES, front desk needs this for phone bookings." It needs a staff screen for typing bookings in (REQ-075). The first answers said front desk staff were view-only (REQ-025, superseded by REQ-068).
 - priority: MVP (proposed: the client says "Screen to type bookings: YES, front desk needs this for phone bookings." for December; to be confirmed)
 - acceptance: not drafted. The front desk permissions are in conflict (see REQ-062).
-- flags: C7-03, C7-04
+- flags: C8-03, C8-04
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Sections B and D): why and priority
@@ -725,7 +725,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-063
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. Who does this is not stated (see Q-039).
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 blocked-by updated after client answers, round 3
@@ -741,7 +741,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: For a later release: "Not in December." (REQ-035).
 - priority: WONT (proposed: the client says loyalty is for later; for the December release)
 - acceptance: not drafted. Later release.
-- flags: C7-21
+- flags: C8-21
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 parent GOAL-002 → GOAL-004 after client answers, round 3
@@ -756,7 +756,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Not for December.
 - priority: WONT (proposed: "nice-to-have for year two"; for the December release)
 - acceptance: not drafted. Later release.
-- flags: C7-21
+- flags: C8-21
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 parent GOAL-002 → GOAL-004 after client answers, round 3
@@ -771,7 +771,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Not for December.
 - priority: WONT (proposed: "maybe later, not now"; for the December release)
 - acceptance: not drafted. Later release.
-- flags: C7-21
+- flags: C8-21
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 parent GOAL-002 → GOAL-004 after client answers, round 3
@@ -786,7 +786,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: "Just bookings and payment" is narrower than what other answers need in December (see Q-034).
 - priority: WONT (proposed: "Not in December"; for the December release)
 - acceptance: not drafted. Later release.
-- flags: C7-21
+- flags: C8-21
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 parent GOAL-002 → GOAL-004 after client answers, round 3
@@ -820,7 +820,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-049
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. The rate and rules are not confirmed (see Q-049).
-- flags: C7-01, C7-05
+- flags: C8-01, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section C, "Q-049"): why
@@ -837,7 +837,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-049
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-049.
-- flags: C7-01, C7-05
+- flags: C8-01, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -853,7 +853,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-049
 - priority: WONT (proposed: the client says "Not critical. We can do it manually after launch if needed."; for the December release)
 - acceptance: not drafted. See Q-049.
-- flags: C7-01
+- flags: C8-01
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Sections D and E): why and priority
@@ -868,7 +868,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client also said "They should get a booking number and confirmation email." and "If they lose the booking number, they can search by email."
 - priority: MVP (client answer, round 4, Q-070: "View/cancel/change bookings online: YES", which is not limited to guests with an account)
 - acceptance: Given a guest booked without an account, when they enter their booking number and email, then they see their booking and can cancel or change it within the rules.
-- flags: C7-03, C7-09
+- flags: C8-03, C8-09
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -883,7 +883,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "Sign up: email, password, phone number."
 - priority: MVP (inferred: the client confirmed guest accounts and sign-in for December, round 4, Q-070; signing up is needed to create an account)
 - acceptance: not drafted. Validation and error cases are not described.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -899,7 +899,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Google and Apple sign-in were not mentioned in round 1.
 - priority: MVP (client answer, round 4, Q-070: "Guest accounts and sign-in: YES, needed.")
 - acceptance: not drafted. Error cases are not described.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -914,7 +914,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "Reset password: email link."
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. How long the link works is not stated.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -929,7 +929,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 5 (Q-041) refines this: personal data (email, phone, card) is deleted right away on closure, but minimal booking-history data (dates, amount paid, guest name) is kept for 3 years for accounting and disputes, then deleted (RULE-037).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See RULE-037.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -946,7 +946,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-051
 - priority: SHOULD (proposed: the client says the 7-day email reminder "is nice" and the 2-day and 1-day reminders are "nice-to-have, not essential"; for December)
 - acceptance: not drafted. Whether SMS is required is not clear (see Q-051).
-- flags: C7-09
+- flags: C8-09
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority set from client answer, round 3 (Section D, "Q-034")
@@ -961,7 +961,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 4 (Q-064) answers which of the five roles may override: the owner and the head office manager (Fatima) can override an automatic confirmation. Hotel managers get automatic confirmation with no override. Front desk staff cannot confirm a booking at all.
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-037.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3: why
@@ -979,7 +979,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Round 3 confirms it: "Record check-in: YES" and "Record no-show: YES". Reports need no-shows (REQ-007). Hotel managers may also mark no-shows (REQ-069).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-039.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section B, "Q-039"): why
@@ -996,7 +996,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client adds: "Each staff member gets email + temporary password." Round 4 (Q-050) says the owner or the head office manager (Fatima) creates hotel managers' own logins, the same way: email plus a temporary password, changed at first login. No two-factor login is needed for managers.
 - priority: MVP (proposed: the client says "Staff logins and roles: YES, essential." for December; to be confirmed)
 - acceptance: not drafted. See Q-050.
-- flags: C7-03, C7-04
+- flags: C8-03, C8-04
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority set from client answer, round 3 (Section D, "Q-034")
@@ -1012,7 +1012,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: On extra security the client is unsure: "maybe two-factor authentication for managers, but not front desk staff" (Q-050).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: Given a staff member logs in for the first time with a temporary password, when they sign in, then they must set a new password before continuing.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1028,7 +1028,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-052
 - priority: WONT (client answer, round 4, Q-070: "Hotel managers editing hotel info: NO, not December. I (head office) will update hotel descriptions and photos. Hotels can update after launch."; for the December release)
 - acceptance: not drafted. See Q-052.
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1045,7 +1045,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-056
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-056.
-- flags: C7-05, C7-22
+- flags: C8-05, C8-22
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1061,7 +1061,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-056
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-056.
-- flags: C7-05, C7-09
+- flags: C8-05, C8-09
 - history:
   - 2026-09-28 created from client answers, round 2. Replaces REQ-027
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1076,7 +1076,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: REQ-008 says everything is bilingual; this sets the order.
 - priority: MVP (proposed: the client says "Arabic pages: YES, must have." for December; to be confirmed)
 - acceptance: Given a guest opens the site with no language chosen, when the page loads, then it is shown in Arabic and English can be chosen.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority set from client answer, round 3 (Section D, "Q-034")
@@ -1091,7 +1091,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client adds: "Turn off the old site, point everything to the new one. Clean break. No running both at the same time."
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. The domain is in conflict (see REQ-063).
-- flags: C7-05, C7-07
+- flags: C8-05, C8-07
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1106,7 +1106,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Today: "Right now: 50 bookings per month across all hotels (that's our current total)." Busy seasons: "Hajj (Sept-Oct), holidays (Dec-Jan, June-July), weekends always." These numbers look low next to the room counts (Q-057). Round 3 answers Q-057: "It's the real total across all six hotels, right now." Per hotel: "Jeddah and Riyadh do maybe 20 bookings a month each." "Dammam, Medina, Abha are slower — 5 each." "Makkah is seasonal (only Hajj time, so maybe 30 bookings in one month, zero the rest of the year)." These add up to about 690 bookings a year (calculated), against "~600 bookings a year" (ASM-003), so all the figures are rough.
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-057.
-- flags: C7-04, C7-05
+- flags: C8-04, C8-05
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section A, "Q-057"): why
@@ -1125,7 +1125,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-058
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. No target yet (see Q-058).
-- flags: C7-05, C7-10
+- flags: C8-05, C8-10
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section D, "Q-019"): why
@@ -1143,7 +1143,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-059
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-059.
-- flags: C7-05, C7-07, C7-10
+- flags: C8-05, C8-07, C8-10
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1159,7 +1159,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-053
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See Q-053.
-- flags: C7-05, C7-09, C7-16
+- flags: C8-05, C8-09, C8-16
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 priority note updated after client answers, round 3 (still unknown)
@@ -1268,7 +1268,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Yusuf is the owner and Fatima the head office manager: "Fatima (my manager): Also head office. She runs day-to-day operations across all six hotels. Same access as me." Replaces REQ-060. REQ-023 (head office) and REQ-024 (hotel managers) still stand.
 - priority: MVP (proposed: the client says "Staff logins and roles: YES, essential." for December; to be confirmed)
 - acceptance: not drafted. What each role may do is in REQ-065 to REQ-069, RULE-030 and RULE-031.
-- flags: C7-03, C7-09
+- flags: C8-03, C8-09
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md. Replaces REQ-060
 
@@ -1283,7 +1283,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: the client says "Staff logins and roles: YES, essential." for December; to be confirmed)
 - acceptance:
   - Given a hotel manager or a front desk user of one hotel, when they open the bookings list, then they see only that hotel's bookings.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md. Replaces REQ-061
 
@@ -1298,7 +1298,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: staff roles are essential for December and head office needs to see all six hotels (REQ-019); to be confirmed)
 - acceptance:
   - Given the owner or the head office manager has signed in with their own login, when they open the bookings list, then they see the bookings of all six hotels.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
   - 2026-09-29 why and acceptance updated, blocked-by Q-065 and Q-071 removed (both answered), from client answers, round 4
@@ -1314,7 +1314,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a guest is signed in, or has entered a booking number and email, when they open their bookings, then they see only their own booking.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1329,7 +1329,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a front desk user has taken a phone booking and charged the card, when they mark the payment as received, then the booking shows the deposit as paid.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md. Replaces REQ-062 and REQ-025
 
@@ -1344,7 +1344,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a hotel manager opens a booking of their hotel, when they mark it as a no-show, then the booking shows No-show.
-- flags: C7-05, C7-09
+- flags: C8-05, C8-09
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1358,7 +1358,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client: "How: same method as deposit (card, SADAD, or we can email a payment link 3 days before". Applies to online bookings (RULE-033). Whether the system sends the link is not stated; today the client sends links by hand (Q-068).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted. See RULE-033 and Q-072.
-- flags: C7-02, C7-05, C7-09, C7-16
+- flags: C8-02, C8-05, C8-09, C8-16
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1373,7 +1373,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a guest has not paid the rest before arrival, when they pay at the desk, then a staff member can mark the rest of the payment as paid and the booking shows paid in full.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1388,7 +1388,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: "fast" is part of REQ-001, which is in the first version; to be confirmed)
 - acceptance:
   - Given a guest opens a page on a phone on a 4G connection, when the page loads, then it has loaded in under 3 seconds.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1403,7 +1403,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: booking is in the first version; to be confirmed)
 - acceptance:
   - Given a guest wants to book a room, when they go from choosing a hotel to paying, then they need no more than 5 steps: hotel, dates, room type, guest information and payment.
-- flags: C7-03, C7-10
+- flags: C8-03, C8-10
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1418,7 +1418,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance:
   - Given a guest has opened their booking, when they cancel it or change its dates, then they need no more than 3 clicks.
-- flags: C7-05, C7-10
+- flags: C8-05, C8-10
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1432,7 +1432,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (proposed: the client says a screen to type in bookings is a December must-have (REQ-030); to be confirmed)
 - acceptance:
   - Given a front desk user has a guest on the phone, when they type in the booking, then it takes no more than 2 minutes in total.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1447,7 +1447,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-046
 - priority: MVP (client answer, round 4, Q-070: "SADAD and Apple Pay: YES, SADAD is essential")
 - acceptance: not drafted. Timing of SADAD confirmations is not known (see Q-046).
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-4-2026-09-29.md. Replaces the SADAD part of REQ-036
 
@@ -1477,7 +1477,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - priority: MVP (client answer, round 4, Q-071: "Yes, a simple list is enough for December.")
 - acceptance:
   - Given bookings exist at one or more hotels, when an authorised user opens the bookings list, then each row shows the booking ID, guest name, hotel name, check-in and check-out dates, room type, total price, status and payment method.
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-4-2026-09-29.md
   - 2026-09-29 quote fixed (C6-02): shortened to a verbatim fragment; the field list moved into `why`, matching the client's line-by-line order
@@ -1493,7 +1493,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-063
 - priority: MVP (needed for launch day; the client did not give it a December/January label, but it must exist before the platform can go live)
 - acceptance: not drafted. Who enters them and the exact source (spreadsheet, Booking.com, Agoda) are not stated (see Q-063).
-- flags: C7-03
+- flags: C8-03
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-4-2026-09-29.md
 
@@ -1507,7 +1507,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Replaces REQ-015 and resolves REQ-059 (the conflict). The client also said: "Guest sees SAR first... International guests see both: SAR (primary) + USD (reference only, using today's rate)" and "Use today's rate, not locked." Price shown includes VAT and the booking fee, all in SAR (RULE-023).
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted.
-- flags: C7-05
+- flags: C8-05
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-5-2026-09-29.md. Replaces REQ-015 and resolves REQ-059
 
@@ -1522,7 +1522,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - blocked-by: Q-073
 - priority: unknown (not in the client's December answers; see Q-070)
 - acceptance: not drafted.
-- flags: C7-05, C7-09
+- flags: C8-05, C8-09
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-5-2026-09-29.md. Replaces REQ-012 and resolves REQ-063
 
@@ -1536,7 +1536,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/brief-2026-09-28.md line 20
 - quote: "We want the new platform within 4 months."
 - why: Parent is none because the deadline applies to the whole project. The client now says: "The deadline is hard: 4 months maximum." and "The 4 months starts now (late September)." That points to about late January. See also RULE-004 for the end-of-December date.
-- flags: C7-04, C7-06
+- flags: C8-04, C8-06
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answers to Q-007, Q-014: why and blocked-by changed
@@ -1565,7 +1565,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "I have about 120,000 Saudi Riyals (~$32,000 USD) for the platform"
 - why: The client also said "I'm flexible if it's worth it", which has no limit. What the budget includes is not stated (Q-031).
 - blocked-by: Q-048
-- flags: C7-04, C7-17
+- flags: C8-04, C8-17
 - history:
   - 2026-09-28 created from client answer to Q-014 (answers pasted by the BA)
   - 2026-09-28 blocked-by updated after client answers, round 2
@@ -1609,7 +1609,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: client answer 2026-09-28 (Q-006)
 - quote: "Free cancellation up to 7 days before arrival. After that, we keep the deposit. No partial refunds — it's all or nothing."
 - why: "Free" is taken to mean the deposit is refunded in full. Edge cases (late bookings, no-shows) are not stated (Q-023). Round 5's answer to Q-040 gives a clear tiered rule for date changes (RULE-036) but does not restate the exact cancellation boundary at 7 days, or reconcile "up to 7 days" here against round 2's "more than 7 days before" wording for date changes (check 4, C4-14).
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created from client answer to Q-006 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -1641,7 +1641,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "different room types and slightly different pricing"
 - why: The client also said the hotels are "all 3-star". How prices are set is not stated (Q-028).
 - blocked-by: Q-054
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created from client answer to Q-003 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -1655,7 +1655,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: client answer 2026-09-28 (Q-012)
 - quote: "We don't have old booking data"
 - why: The client said guests "called or booked through third-party sites", so there are no old customer accounts to move either.
-- flags: C7-11
+- flags: C8-11
 - history:
   - 2026-09-28 created from client answer to Q-012 (answers pasted by the BA)
 
@@ -1681,7 +1681,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "everything goes to head office first"
 - why: The client said "One central account for now." and that money is split between hotels in the accounting system. Who processes refunds and which accounting tool is used are not stated (Q-045).
 - blocked-by: Q-045
-- flags: C7-02
+- flags: C8-02
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -1750,7 +1750,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "Refunds: Go back to the same payment method within 48 hours."
 - why: How refunds work for SADAD is not stated (Q-045, Q-046).
 - blocked-by: Q-045
-- flags: C7-02
+- flags: C8-02
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -1763,7 +1763,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "If payment fails, the booking is not confirmed. Room is held for 2 hours, then released."
 - why: SADAD and bank transfers may take longer than 2 hours to confirm (Q-046). The answer to "leaves halfway" is unclear (Q-047).
 - blocked-by: Q-046, Q-047
-- flags: C7-02
+- flags: C8-02
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -1801,7 +1801,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-2-2026-09-28.md (Section C, answer headed "Q-015 [NEW]")
 - quote: "Keep guest data for 3 years for accounting."
 - why: This no longer conflicts with account closure: RULE-037 (round 5, Q-041) says only minimal booking-history data (dates, amount, name) is kept for 3 years after closure, and personal data (email, phone, card) is deleted immediately. Privacy text: "I trust you to handle that." (RISK-004).
-- flags: C7-01
+- flags: C8-01
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-29 why updated to cross-reference RULE-037, from client answers, round 5
@@ -1939,7 +1939,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-3-2026-09-28.md (Section B, answer headed "Q-037")
 - quote: "can't change prices or policies — I approve that"
 - why: The owner has the "ability to change prices and policies" and Fatima has the "Same access as me." Front desk staff: "Change prices: NO". Round 2 said "Change prices: Only Manager"; which manager is meant is open (Q-064).
-- flags: C7-12
+- flags: C8-12
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1965,7 +1965,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-3-2026-09-28.md (Section C, answer headed "Q-049")
 - quote: "VAT is 15% on room prices."
 - why: A client statement, not checked against an official source. In round 2 he said "I think it's 15%". His accountant Ahmed handles the details (DEP-006). Shown prices include VAT (RULE-023).
-- flags: C7-01
+- flags: C8-01
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1978,7 +1978,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - quote: "If they don't pay the rest before arrival, they can still check in and pay at the desk."
 - why: The client also said "Deposit: paid at booking time (online, card or SADAD)" and "Rest of payment: due 2 days before arrival, or at check-in". What "or at check-in" means is not clear (Q-072).
 - blocked-by: Q-072
-- flags: C7-02, C7-16
+- flags: C8-02, C8-16
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -1990,7 +1990,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-3-2026-09-28.md (Section D, answer headed "Q-044")
 - quote: "Phone booking: I take their card number over the phone and charge the deposit (25% or 50%). The rest is due at check-in."
 - why: Replaces RULE-013 for phone bookings (RULE-013 said phone bookings pay in full). In the system: "Mark phone bookings as "deposit paid" (because the rest is due later)." Taking card numbers by phone is a risk (RISK-008).
-- flags: C7-02
+- flags: C8-02
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md. Replaces RULE-013
 
@@ -2096,7 +2096,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client's own assumption: "I assume it stays in Saudi Arabia since the guests are Saudi, but again, ask Ahmed." He does not know the rules.
 - risk-if-wrong: Hosting choice, cost and personal-data rules may change if guest data must stay in Saudi Arabia, or may go abroad.
 - validate-by: Ask Ahmed (Q-049).
-- flags: C7-01
+- flags: C8-01
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -2112,7 +2112,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "We want to increase direct bookings on our own platform instead of always going through booking sites like Booking.com. We're paying them too much commission. Success means 30% of bookings come direct within the first year. Also, guests expect a modern experience — they should be able to book quickly and manage their reservations themselves, not call us."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 answer recorded (pasted by the BA). Led to GOAL-002, PRB-002, NEED-003, Q-018
@@ -2143,7 +2143,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "One platform for all 6 hotels. But each hotel should have its own page. The hotels are similar — all 3-star, but different room types and slightly different pricing. Al Riyadh and Al Jeddah are our flagship hotels. We manage everything centrally from the head office here."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 answer recorded (pasted by the BA). Led to REQ-010, REQ-011, RULE-008, Q-028
@@ -2286,7 +2286,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Our current website is hosted with a small Saudi hosting company. Content (descriptions, photos, some guest reviews) should move over. We don't have old booking data — guests called or booked through third-party sites. We can keep the same domain name (something like saudhotels.com or similar). My IT person can handle that."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 answer recorded (pasted by the BA). Led to REQ-012, REQ-027, RULE-009, DEP-004, Q-027, Q-029
@@ -2317,7 +2317,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "I make the final decisions. I have about 120,000 Saudi Riyals (~$32,000 USD) for the platform, but I'm flexible if it's worth it. The deadline is hard: 4 months maximum. My team will help with content and testing."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 answer recorded (pasted by the BA). Led to RULE-002, RULE-003, DEP-003, RISK-002, Q-031. Updated RULE-001
@@ -2348,7 +2348,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "End of December is our hard deadline. We're losing money right now because guests can't book direct — they go to Booking.com and pay 15% commission. After December, we'll add features in January if needed, but December is when we go live."
 - answered-on: 2026-09-28
-- flags: C7-14, C7-19
+- flags: C8-14, C8-19
 - history:
   - 2026-09-28 created from client answers to Q-007 and Q-014 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2364,7 +2364,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Ideally, automatic sync from the booking sites. But if that's too complex, we can manually type them in for the first month. Walk-ins and phone bookings — our front desk staff will type those in when the guest calls or arrives."
 - answered-on: 2026-09-28
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created from client answer to Q-013 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2414,7 +2414,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Most are Saudi nationals, so SADAD (bank transfer), credit card (Visa/Mastercard), and Apple Pay. Some international guests use card. WhatsApp payments from guests is common too, but that's manual. We don't use cash online."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created from client answer to Q-005 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2430,7 +2430,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "25% for bookings 7+ days before arrival. 50% for bookings less than 7 days. Full payment for walk-ins and phone bookings — they pay when they arrive or reserve by phone."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created from client answer to Q-005 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2478,7 +2478,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Yes. They should get a booking number and confirmation email. They can use that booking number + email to log back in without a full account. If they lose the booking number, they can search by email."
 - answered-on: 2026-09-28
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created from client answer to Q-008 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2494,7 +2494,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Automatic. As soon as payment clears, it's confirmed. Guest gets an email confirmation. Staff can see it immediately in the system. (Channels and timing were answered under the client's 'Q-023 [NEW]'; see REQ-045.)"
 - answered-on: 2026-09-28
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created from client answers to Q-008 and Q-009 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2527,7 +2527,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Photos: yes, all of them. Location and contact: yes. Descriptions: yes, but some are outdated — we'll refresh them. Reviews: only 4-star and 5-star reviews, maybe 50 of them total. I'll pick which ones. No 1-star or 2-star reviews going up."
 - answered-on: 2026-09-28
-- flags: C7-14
+- flags: C8-14
 - history:
   - 2026-09-28 created from client answers to Q-002 and Q-012 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2607,7 +2607,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Yes to all four. Guest picks hotel (or sees all six), dates, number of guests, room type (single, double, suite, etc.). Results should show available rooms, price per night, total price for the stay."
 - answered-on: 2026-09-28
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created from client answer to Q-007 (answers pasted by the BA)
   - 2026-09-28 checked by /ba-check run 1
@@ -2640,7 +2640,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "For December MVP: Arabic pages: YES, must have. 80% of guests are Saudi. VAT invoices: Not critical. We can do it manually after launch if needed. Staff logins and roles: YES, essential. I need to control who sees what. Screen to type bookings: YES, front desk needs this for phone bookings. Guest reminders: Email reminder 7 days before is nice. 2 days and 1 day are nice-to-have, not essential. So: Arabic, staff roles, booking entry — yes. Invoices and multiple reminders — can be after December."
 - answered-on: 2026-09-28
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 answer recorded from round 3 (headed "Q-034" in the client file; line breaks joined with spaces)
@@ -2672,7 +2672,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Guest sees SAR first. That's their home currency — 80% are Saudi. International guests see both: SAR (primary) + USD (reference only, using today's rate: 1 USD = 3.75 SAR). We charge in SAR always. No option to pay in USD. Exchange rate: Use today's rate, not locked. If a guest books in USD, we show them the SAR equivalent at booking time and that's what they pay. Price shown includes VAT and booking fee (all in SAR)."
 - answered-on: 2026-09-29
-- flags: C7-14, C7-19
+- flags: C8-14, C8-19
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -2739,7 +2739,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Clear rule: >7 days before arrival: FREE to change dates. 2-7 days before: PAID change — guest pays the difference (if changing to costlier dates) or forfeits the difference (if changing to cheaper dates). 0-1 days before (arrival day itself): NO changes allowed — too late. Exception: If a guest has already checked in (they're at the hotel), they can't change dates at all."
 - answered-on: 2026-09-29
-- flags: C7-14, C7-19
+- flags: C8-14, C8-19
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -2755,7 +2755,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "When a guest's account is deleted: their booking history is kept for 3 years (for accounting, tax, dispute resolution). But personal data (email, phone, credit card) is deleted. After 3 years: all data is deleted. During those 3 years: we keep minimal data — booking dates, amount paid, guest name — just enough to answer 'where's my receipt?' or handle disputes."
 - answered-on: 2026-09-29
-- flags: C7-14, C7-19
+- flags: C8-14, C8-19
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -2771,7 +2771,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Domain name: saudiarabbookings.com (final decision). If it's taken, my second choice is bookourhotels.sa. Who registers it: You register it, I pay for it (included in the 120,000 SAR budget). You hold the technical login, I hold the business owner credentials. Hosting: Move from the old host. The new platform needs its own hosting, not shared with the old site. Who's the IT person: I'll ask Fatima to coordinate with our IT guy (I'll send his contact). He handles the DNS, backups, and technical issues. Backup responsibility: You handle backups of the platform. I handle backups of our Excel data until we migrate."
 - answered-on: 2026-09-29
-- flags: C7-14, C7-19
+- flags: C8-14, C8-19
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -2918,7 +2918,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-2-2026-09-28.md (Section E, answer headed "Q-025 [NEW]")
 - why: The client wants to approve changes before they go live, but the permission list says "Change prices: Only Manager" with no approval step.
 - ask: Yusuf
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -2944,7 +2944,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-2-2026-09-28.md (Section E, answer headed "Q-024")
 - why: No season dates were given. The client wrote "Hajj (Sept-Oct)" (Section F, "Q-033 [NEW]"). My understanding is that Hajj dates move earlier each year, so this needs checking (not researched).
 - ask: Yusuf
-- flags: C7-20
+- flags: C8-20
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -2998,7 +2998,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - source: inputs/client-answers-round-2-2026-09-28.md (Section F, answer headed "Q-033 [NEW]")
 - why: The client said "probably 40% ... use phones" but also wants "mobile-first". "Older" and "slow" have no target.
 - ask: Yusuf
-- flags: C7-04
+- flags: C8-04
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -3085,7 +3085,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - ask: Yusuf
 - answer: "Action / Me (Owner) / Fatima (Head Office Manager) / Hotel Manager / Front Desk / Guest — View bookings: All 6 / All 6 / Own hotel / Own hotel / Own only. Confirm booking: Auto, override / Auto, override / Auto, no override / No / —. Cancel booking: Yes / Yes / Yes / No / Yes (if window allows). Change dates: Yes / Yes / Yes / No / Yes (if window allows). Mark payment: Yes / Yes / Yes / Yes / —. Send reminder: Yes / Yes / Yes / No / —. Change prices: Yes / Yes / No / No / —. See reports: Yes / Yes / Yes / No / —."
 - answered-on: 2026-09-29
-- flags: C7-19
+- flags: C8-19
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
   - 2026-09-28 checked by /ba-check run 3
@@ -3235,7 +3235,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (depends on Q-017)
 - impact: high
 - mitigation: Decide in Q-017 how availability is kept in sync before design starts.
-- flags: C7-04, C7-15
+- flags: C8-04, C8-15
 - history:
   - 2026-09-28 created from client answer to Q-013 (answers pasted by the BA)
   - 2026-09-28 why updated from client answer, round 2 (Section A, "Q-017")
@@ -3251,7 +3251,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (no estimate yet)
 - impact: high
 - mitigation: Agree the first-version scope (Q-015), and give estimates as ranges with confidence and assumptions in the Commit phase.
-- flags: C7-05, C7-06, C7-15
+- flags: C8-05, C8-06, C8-15
 - history:
   - 2026-09-28 created from client answer to Q-014 (answers pasted by the BA)
   - 2026-09-28 why updated from client answers, round 2
@@ -3266,7 +3266,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (depends on Q-062)
 - impact: medium
 - mitigation: Decide in the Shape phase whether the booking source and the amount are recorded from the first booking, and how the December/January gap in reporting is covered (manual export, per Q-070's answer on REQ-007).
-- flags: C7-15
+- flags: C8-15
 - history:
   - 2026-09-28 created from client answer to Q-001 (answers pasted by the BA)
   - 2026-09-29 why and mitigation updated with the round-5 tracking method and the reporting-gap risk
@@ -3299,7 +3299,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (a size and range estimate has not been done yet)
 - impact: high
 - mitigation: The split is now known (Q-048); give a ranged estimate against the 80,000 SAR building budget, with confidence and assumptions, in the Commit phase.
-- flags: C7-15
+- flags: C8-15
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-29 why and mitigation updated with the 80,000 / 40,000 split from client answers, round 4 (Q-048)
@@ -3314,7 +3314,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (accountant not yet asked)
 - impact: high
 - mitigation: Get the accountant's answer (Q-049). Research only if the BA asks.
-- flags: C7-01, C7-15
+- flags: C8-01, C8-15
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -3328,7 +3328,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (not researched)
 - impact: high
 - mitigation: Plan for manual entry in the first month (REQ-031). Research only if the BA asks.
-- flags: C7-15
+- flags: C8-15
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -3342,7 +3342,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - probability: unknown (not researched)
 - impact: high
 - mitigation: Ask which payment service is used today (Q-068). Prefer payment links over card numbers by phone. Research only if the BA asks.
-- flags: C7-01, C7-15
+- flags: C8-01, C8-15
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
 
@@ -3358,7 +3358,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: A recommendation needs research, which starts only when the BA asks. The final decision is Yusuf's (RULE-002). Round 3: the client already charges cards by phone and sends payment links "via a payment service" (Q-068). Round 4 (Q-068) narrows this: there is no formal provider today; the client charges cards himself with his own card reader, and sometimes uses a Google Pay link or the old website's payment page, which he thinks but is not sure is Stripe. He asks for a recommendation of a provider that works in Saudi Arabia (SADAD, cards, Apple Pay from January) and integrates with the platform.
 - owner: BA (recommendation); Yusuf (final decision)
 - needed-by: UNKNOWN
-- flags: C7-02, C7-08
+- flags: C8-02, C8-08
 - history:
   - 2026-09-28 created by /ba-extract from inputs/brief-2026-09-28.md
   - 2026-09-28 updated from client answer to Q-005: title, label ASSUMPTION → KNOWN, quote and owner changed
@@ -3425,7 +3425,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client adds: "We're set up with a Saudi business bank account." No payment provider has been contacted yet (DEP-001).
 - owner: Yusuf
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -3440,7 +3440,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - owner: Ahmed (Yusuf's accountant)
 - needed-by: UNKNOWN
 - blocked-by: Q-049
-- flags: C7-01, C7-08
+- flags: C8-01, C8-08
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 updated by /ba-extract from client answers, round 3 (Section C, "Q-049"): owner and why
@@ -3455,7 +3455,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client also said "I'll give you a spreadsheet with all room types and base prices." (Section E, "Q-026 [NEW]").
 - owner: Yusuf
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -3469,7 +3469,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The project team writing the English text may not be in scope (RISK-004, Q-060).
 - owner: Yusuf (review)
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2
 
@@ -3483,7 +3483,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: The client adds: "She can turn around translations in 3-5 days." Replaces DEP-002.
 - owner: Layla (colleague of Yusuf)
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2. Replaces DEP-002
 
@@ -3497,7 +3497,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Also: "Fatima (my manager): 10 hours a week for testing and approval." and "Me: I'll be available for big decisions, maybe 5 hours a week." Replaces DEP-003.
 - owner: Layla, Fatima and Yusuf
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2. Replaces DEP-003
 
@@ -3512,7 +3512,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - owner: Fatima
 - needed-by: After launch
 - blocked-by: Q-059
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-28 created from client answers, round 2
   - 2026-09-28 checked by /ba-check run 2
@@ -3527,7 +3527,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Ahmed handles ZATCA e-invoicing, VAT calculation and reporting, and invoices (DEP-006, Q-049).
 - owner: Yusuf
 - needed-by: UNKNOWN
-- flags: C7-01, C7-08
+- flags: C8-01, C8-08
 - history:
   - 2026-09-28 created by /ba-extract from inputs/client-answers-round-3-2026-09-28.md
   - 2026-09-29 client answers, round 4: Yusuf repeats he will send the details "separately"; still not received, needed-by still UNKNOWN
@@ -3543,7 +3543,7 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - why: Replaces part of DEP-004. Also: "Move from the old host. The new platform needs its own hosting, not shared with the old site" and "You handle backups of the platform."
 - owner: BA / project team (registration, hosting, backups); Yusuf (payment, business-owner credentials)
 - needed-by: UNKNOWN
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-5-2026-09-29.md. Replaces part of DEP-004
 
@@ -3558,6 +3558,6 @@ Items are grouped by type below. Add new items at the end of their group. Never 
 - owner: Fatima; the client's IT person (name UNKNOWN)
 - needed-by: UNKNOWN
 - blocked-by: Q-073
-- flags: C7-08
+- flags: C8-08
 - history:
   - 2026-09-29 created by /ba-extract from inputs/client-answers-round-5-2026-09-29.md. Replaces part of DEP-004
