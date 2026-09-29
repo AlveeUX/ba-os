@@ -15,15 +15,15 @@ status: REVIEWED
 Yusuf's company runs six hotels in Saudi Arabia (380 rooms in total, REQ-058). About 90% of its bookings come through Booking.com and Agoda, which each keep 15%: "if a guest pays 1000 SAR, we get 850" (PRB-005, ASM-003). Guests cannot book direct on the current website, which is slow, outdated and not mobile-friendly (PRB-003, PRB-005). Direct bookings by phone, WhatsApp and email are handled by hand: booking-site emails are forwarded to Fatima, who types them into a shared spreadsheet that is "a mess because people sometimes forget to update it" (PRB-004, PRB-006). The cost the client names is the commission and the lost direct business ("We're losing money right now"). The yearly amount is UNKNOWN. A good outcome is that guests book and pay online quickly and manage their own reservations (NEED-003), staff see every booking in one place (REQ-026), and 50% of booking money comes direct by the end of the first year (GOAL-004).
 
 ## Goals and success measures [light]
-status: AI-DRAFT
+status: REVIEWED
 
 | GOAL | Success measure | Baseline today | Target |
 | --- | --- | --- | --- |
-| GOAL-004 | The share of booking money (SAR) that comes direct. A booking is direct when it does not come through Booking.com or Agoda, so phone, email and walk-in count (RULE-029) | About 10% of bookings by number, roughly 60 of about 600 a year (ASM-003, the client's estimate). The share by money is UNKNOWN (Q-062). About 50 bookings a month in total (REQ-055) | 50% by the end of the first year, which runs from launch, "Dec 2026 to Dec 2027" (GOAL-004). The client also said "By December, maybe 20%", which does not fit a December launch (Q-061) |
+| GOAL-004 | The share of booking money (SAR) that comes direct. A booking is direct when it does not come through Booking.com or Agoda, so phone, email and walk-in count (RULE-029) | About 10% of bookings by number, roughly 60 of about 600 a year (ASM-003). About 8-10% by money (Q-062) | 50% by the end of the first year, which runs from launch, "Dec 2026 to Dec 2027". Interim milestones: 15-20% direct by the end of December 2026, 30% by the end of Q1 2027 (31 March), tracked monthly as (direct booking money) / (all booking money) (Q-061) |
 
 Supporting targets the client gave, which are requirements, not goals: 200 bookings a month by year end (REQ-055); pages load in under 3 seconds on a phone on 4G (REQ-072); a booking in no more than 5 steps (REQ-073); cancelling or changing in no more than 3 clicks (REQ-074); typing in a booking in no more than 2 minutes (REQ-075).
 
-GOAL-004 is `AI-DRAFT`. It replaces GOAL-002 (30%) and GOAL-003 (the 30% or 50% conflict), which were superseded on the strength of the answer to Q-035. Gate 3 needs a goal with a success measure to be `REVIEWED`; confirm the 50% with Yusuf first (check 4, C4-02).
+GOAL-004 replaces GOAL-002 (30%) and GOAL-003 (the 30% or 50% conflict). The 50% target, its by-money baseline and the December/Q1 milestones are all confirmed by the client (Q-061, Q-062); check 4's C4-02 is closed. One open risk: the monthly tracking method the client committed to depends on reporting that is not due until January (REQ-007 is `WONT` for December) — see RISK-003.
 
 ## Root causes [standard]
 status: REVIEWED
@@ -60,17 +60,17 @@ The client has not stated any non-goals in so many words. What follows comes fro
 - **UNKNOWN:** whether the client rules anything else out. Q-060 (which of his requests are in scope and priced) and Q-070 decide more of this.
 
 ## User roles and permissions [light]
-status: AI-DRAFT
+status: REVIEWED
 
-Five roles, from the client's answer (REQ-064). Which role may do each action in round 2's permission list is still open (Q-064).
+Five roles, from the client's answer (REQ-064). The round-2 permission list is now mapped to these five roles (Q-064): the owner and the head office manager (Fatima) can confirm and override, cancel, change dates, mark payments, send reminders, change prices and see reports. Hotel managers can do the same except change prices, and their confirmations are automatic with no override. Front desk staff can only mark payments and cannot confirm, cancel, change dates, send reminders, change prices or see reports. Guests can cancel or change dates only within the rules (RULE-036).
 
 | Role | Goals | Can do | Cannot do |
 | --- | --- | --- | --- |
-| Owner (Yusuf) | More direct bookings (GOAL-004); control of prices and policies | See everything: all hotels and all reports. Change prices and policies. Approve changes to hotel information and the room and price data (REQ-064, RULE-030, RULE-024, RULE-025) | Nothing is stated as forbidden (UNKNOWN) |
-| Head office manager (Fatima) | Runs day-to-day operations across all six hotels | "Same access as me": the same as the owner (REQ-064). One login shows all six hotels (REQ-066). Whether she and Yusuf share a login is open (Q-065) | Nothing is stated as forbidden (UNKNOWN) |
-| Hotel manager (one per hotel, 6 in all) | Run their own hotel's bookings | See only their own hotel's bookings. Mark payments and no-shows. Change a booking's dates. Update their own hotel's information, with the owner's approval (REQ-065, REQ-069, RULE-031, REQ-050, RULE-024) | See other hotels (REQ-065). Change prices or policies (RULE-030) |
-| Front desk staff (multiple per hotel) | Handle phone bookings, arrivals and payments at the desk | See only their own hotel's bookings. Type in phone bookings. Mark payments received for phone and card bookings. Record check-ins, no-shows and phone cancellations (REQ-065, REQ-030, REQ-068, REQ-047, REQ-022) | See other hotels (REQ-065). Change booking dates (RULE-031). Change prices (RULE-030) |
-| Guest | Book quickly and manage the reservation without calling (NEED-003) | Search rooms, book with or without an account, pay, view their own booking, cancel or change dates within the rules, sign up, sign in, reset a password and close an account (REQ-009, REQ-016, REQ-040, REQ-017, REQ-041 to REQ-044) | See anyone else's booking (REQ-067) |
+| Owner (Yusuf) | More direct bookings (GOAL-004); control of prices and policies | See everything: all hotels and all reports. Confirm or override a booking, cancel, change dates, mark payments, send reminders, change prices, see reports (REQ-064, Q-064). Approve changes to hotel information and the room and price data (RULE-030, RULE-024, RULE-025). Has his own login (Q-065) | Nothing is stated as forbidden (UNKNOWN) |
+| Head office manager (Fatima) | Runs day-to-day operations across all six hotels | Same access as the owner: confirm or override, cancel, change dates, mark payments, send reminders, change prices, see reports (REQ-064, Q-064). One login shows all six hotels (REQ-066), and it is her own, separate from the owner's, for accountability (Q-065) | Nothing is stated as forbidden (UNKNOWN) |
+| Hotel manager (one per hotel, 6 in all) | Run their own hotel's bookings | See only their own hotel's bookings. Bookings confirm automatically, with no override. Cancel, change dates, mark payments and no-shows, send reminders, see reports, for their own hotel (Q-064, REQ-069). Update their own hotel's information, with the owner's approval (REQ-050, RULE-024) | See other hotels (REQ-065). Change prices or policies (RULE-030). Override an automatic confirmation (Q-064) |
+| Front desk staff (multiple per hotel) | Handle phone bookings, arrivals and payments at the desk | See only their own hotel's bookings. Type in phone bookings. Mark payments received for phone and card bookings. Record check-ins, no-shows and phone cancellations (REQ-065, REQ-030, REQ-068, REQ-047, REQ-022) | See other hotels (REQ-065). Confirm a booking, cancel, change dates, send reminders, change prices or see reports (Q-064). Change booking dates (RULE-036) |
+| Guest | Book quickly and manage the reservation without calling (NEED-003) | Search rooms, book with or without an account, pay, view their own booking, cancel or change dates within the rules (RULE-036), sign up, sign in, reset a password and close an account (REQ-009, REQ-016, REQ-040, REQ-017, REQ-041 to REQ-044) | See anyone else's booking (REQ-067). Change dates outside RULE-036's windows |
 
 Open on roles: which round-2 actions each role may do (Q-064); two-factor login for managers and who creates the managers' own logins (Q-050); who may send reminders (Q-051); how many staff logins there will be (round 1 said about 1 to 2 staff per hotel, round 3 says "many"). Managers create staff logins with a temporary password, and staff must change it at first login (REQ-048, REQ-049).
 

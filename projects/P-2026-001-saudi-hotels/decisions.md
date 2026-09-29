@@ -146,6 +146,26 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Eight of the 11 Define sections are now reviewed. Who takes phone bookings after launch, a declined card, staff password reset and the booking-site double-booking rule are still `UNKNOWN`; J3 and J4 rest on the phone and walk-in answer flagged in check 4 (C4-27).
 
+### DEC-014 · Reviewed 03-define.md section "Goals and success measures"
+- date: 2026-09-29
+- decided-by: the BA
+- decision: Reviewed the "Goals and success measures" section of `03-define.md`, refreshed first with the client's round 4 and round 5 answers (the by-money baseline and the December/Q1 milestones).
+- items: 03-define.md "Goals and success measures" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-4-2026-09-29.md`; `inputs/client-answers-round-5-2026-09-29.md`; `items.md` (GOAL-004, Q-061, Q-062, ASM-003, RISK-003)
+- alternatives: none
+- impact: Nine of the 11 Define sections are now reviewed. Check 4's finding C4-02 is closed. The monthly tracking method the client committed to still depends on reporting not due until January (REQ-007, RISK-003).
+
+### DEC-015 · Reviewed 03-define.md section "User roles and permissions"
+- date: 2026-09-29
+- decided-by: the BA
+- decision: Reviewed the "User roles and permissions" section of `03-define.md`, refreshed first with the client's round 4 answer mapping the round-2 permission list to the five roles, and the round-4 answer on separate logins.
+- items: 03-define.md "User roles and permissions" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-4-2026-09-29.md`; `items.md` (REQ-064, REQ-046, REQ-065, REQ-066, RULE-030, RULE-036, Q-064, Q-065)
+- alternatives: none
+- impact: Ten of the 11 Define sections are now reviewed. Only "Exceptions and edge cases" is still `AI-DRAFT`. Which settings count as configurable "policies" versus fixed rules is still open (check 6/7, C7-12).
+
 ## Change log (CHG)
 
 <!--

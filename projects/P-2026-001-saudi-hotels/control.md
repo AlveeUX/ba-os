@@ -2,16 +2,16 @@
 
 _Rebuilt by `/ba-status`. Do not edit by hand, except the Notes section at the bottom._
 
-Last updated: 2026-09-28
+Last updated: 2026-09-29
 
 ## Right now
 
 | | |
 | --- | --- |
 | Current phase | 3. Define (gate not started). Phase 1 and Phase 2 both ended PARTIAL on 2026-09-28 (GATE-001, GATE-002) |
-| Next required action | Resolve the top findings from check 4. The high one, **C4-01** (Saudi tax, invoice and privacy rules), needs Ahmed: ask Yusuf for his contact details (DEP-012), then send him Q-049. Define also needs the roles settled (**C4-03**: Q-064 and Q-065) and the goal confirmed (**C4-02**: Q-061 and Q-062). Two quick fixes are yours: **C4-08** (which deadline counts: RULE-001 or RULE-010) and **C4-13** (RULE-009 states a guess as fact). The flag update from check 4 has not run yet, so `items.md` still shows check 3's flags: run `! python "C:/Users/absar/AppData/Local/Temp/claude/C--Projects-BA-OS/ebb70264-26d8-401f-9e4e-e3ba8e3d07be/scratchpad/apply_check4.py"`. After that, `03-define.md` has 11 empty sections that Gate 3 needs (Problem statement, Goals and success measures, Root causes, Desired future state, Non-goals, User roles and permissions, Key journeys, Future workflows, Business rules, Integrations, Exceptions and edge cases); ask me to draft them. Gate 3 also needs the problem statement and at least one goal with a success measure to be `REVIEWED` (GOAL-004 is still `AI-DRAFT`). |
-| Blockers | No gate is `BLOCKED` and no dependency blocks Phase 3. One high finding from check 4 is open: **C4-01** (Saudi rules on VAT, ZATCA e-invoicing, privacy and card handling are unknown, and nobody has a date for the answers). It is the risk accepted in GATE-002. Three medium findings matter early in Define: the December scope (C4-05, Q-070), the role mapping (C4-03, Q-064) and the payment mechanics (C4-04). There are also 4 open `CONFLICT` items; each has a question (Q-036, Q-040, Q-041, Q-042). |
-| Overall confidence | low — 114 of 200 open items are `KNOWN` (57%) and every quote was checked against `inputs/`, but no item is `REVIEWED` yet (only the profile and 4 Discover sections are), there are 4 open conflicts and 31 unanswered questions, 1 high finding is open, and 44 of 69 requirements have no priority. The December scope (Q-070) keeps growing (16 MVP requirements in about 13 weeks), and the 4-month and end-of-December deadlines are not yet reconciled (C4-08). |
+| Next required action | Two sections of `03-define.md` are content-complete and fully unblocked — "Goals and success measures" and "User roles and permissions" — and are ready for you to run `/ba-approve section` on each. Beyond that, resolve the open findings from check 7 (`checks/check-7-2026-09-29.md`): the one high finding, **C7-01** (Saudi tax, e-invoicing, privacy and card rules — Ahmed's contact details still haven't arrived after three rounds of promises), and the medium findings that matter most for what comes next: **C7-03** (10 of 24 MVP requirements still lack acceptance criteria, needed before Gate 4) and **C7-05** (35 of 70 requirements have no priority). |
+| Blockers | No gate is `BLOCKED`. One high finding is open: **C7-01** (Saudi rules), which depends on Ahmed, outside the project team. There are **no open `CONFLICT` items** — all 4 were resolved in round 5. |
+| Overall confidence | low, but improving steadily — 119 of 202 open items are `KNOWN` (59%), up from 57% three rounds ago. Every open conflict is gone and all three quote-quality findings from check 6 were fixed and re-verified. What is holding this back from `medium`: no item itself is `REVIEWED` yet (only stage-file sections and the profile are), the MVP list has grown twice (16 → 24 requirements) against the same ~13-week deadline, 10 of those MVP requirements still lack acceptance criteria, and the one open high finding depends on a third party who has not delivered in three rounds. |
 
 ## Project
 
@@ -19,10 +19,10 @@ Last updated: 2026-09-28
 | --- | --- |
 | Project | saudi hotels |
 | Client | Yusuf (owner; company name UNKNOWN). Makes the final decisions (RULE-002). His team: Fatima (head office manager: testing and approval 10 hours a week, day-to-day support after launch), Layla (translation and content, 5 hours a week), Yusuf (about 5 hours a week) (REQ-064, DEP-009, DEP-010, DEP-011) |
-| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile approved 2026-09-28, DEC-001) |
-| Business objective | GOAL-004: reach 50% of bookings direct, counted by money, by the end of the first year (year one runs from launch, "Dec 2026 to Dec 2027"). It replaces GOAL-002 (30%) and the conflict GOAL-003. Direct share today is about 10% by number of bookings, a client estimate (ASM-003); the share by money is UNKNOWN (Q-062). Booking sites take 15% commission (PRB-005). Status `AI-DRAFT` |
-| Deadline | End of December is the "hard deadline" and the go-live date (RULE-010, about 13 weeks from 2026-09-28, calculated). "4 months maximum" (RULE-001) is still on file and is later; the two are not yet reconciled (C4-08). Features can follow in January |
-| Budget signal | About 120,000 SAR (~$32,000), "flexible if it's worth it" (RULE-003). It includes hosting, payment fees, translation, running the platform and first-year support (RULE-019). How it splits is not known (Q-048, RISK-005) |
+| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile approved 2026-09-28, DEC-001; profile itself is now stale, C7-13) |
+| Business objective | GOAL-004: reach 50% of bookings direct, counted by money, by the end of the first year (year one runs from launch, "Dec 2026 to Dec 2027"), with interim milestones of 15-20% by end of December 2026 and 30% by end of Q1 2027 (round 5, Q-061). Direct share today is about 10% by number of bookings (ASM-003) and about 8-10% by money (Q-062). Booking sites take 15% commission (PRB-005). Status `AI-DRAFT`, content-complete, ready for `/ba-approve section` |
+| Deadline | End of December is the "hard deadline" and go-live date (RULE-010). "4 months maximum" (RULE-001) is still on file and later; the two are not yet reconciled (C7-06) |
+| Budget signal | About 120,000 SAR (~$32,000), split roughly 80,000 SAR building / 40,000 SAR running and first-year support (Q-048) |
 
 ## Gates
 
@@ -39,62 +39,64 @@ Last updated: 2026-09-28
 
 | Status | Count |
 | --- | --- |
-| AI-DRAFT | 107 |
-| AI-CHECKED | 93 |
+| AI-DRAFT | 104 |
+| AI-CHECKED | 98 |
 | REVIEWED | 0 |
 | CONFIRMED | 0 |
 | APPROVED | 0 |
 | REJECTED | 0 |
-| SUPERSEDED | 19 |
+| SUPERSEDED | 28 |
 
-Total: 219 items. All 107 `AI-DRAFT` items went through checks 3 and 4 and carry finding flags.
+Total: 230 items. Check 7 (2026-09-29) promoted RULE-036 and RULE-037 to `AI-CHECKED` after their quote formatting was fixed; REQ-078 was also fixed but keeps one flag (C7-03) as part of the MVP-acceptance-criteria set.
 
 ## Items by label (open items only)
 
 | Label | Count |
 | --- | --- |
-| KNOWN | 114 |
+| KNOWN | 119 |
 | ASSUMPTION | 10 |
-| UNKNOWN | 72 |
-| CONFLICT | 4 |
+| UNKNOWN | 73 |
+| CONFLICT | 0 |
 
-Open items: 200. All 72 `UNKNOWN` are Q items. 41 of them have an answer recorded, and 31 have none: Q-036, Q-040 to Q-042, Q-045 to Q-056, Q-058 to Q-060 and Q-061 to Q-072. The 4 `CONFLICT` items are REQ-059 (currencies), REQ-063 (domain), RULE-027 (date changes) and RULE-028 (data deletion).
+Open items: 202. All 73 `UNKNOWN` are Q items. 55 of them have an answer recorded, and 18 have none: Q-045, Q-046, Q-047, Q-049, Q-051 to Q-056, Q-058, Q-059, Q-060, Q-063, Q-066, Q-067, Q-072 and Q-073. **No `CONFLICT` items remain** — the four that existed (currencies, domain, date changes, data deletion) were all resolved by the client's round-5 answers.
 
 ## Top open questions
 
-MVP-related first. The MVP items are REQ-001, REQ-002, REQ-003, REQ-009, REQ-013, REQ-019, REQ-028, REQ-030, REQ-048, REQ-053, REQ-064, REQ-065, REQ-066, REQ-072, REQ-073 and REQ-075 (all proposed, none confirmed).
+MVP-related first. The MVP requirements are 24: REQ-001 to REQ-004, REQ-009, REQ-013, REQ-017, REQ-019, REQ-028, REQ-030, REQ-040 to REQ-042, REQ-048, REQ-053, REQ-064 to REQ-066, REQ-072, REQ-073, REQ-075, REQ-076, REQ-078 and REQ-079 (all proposed, none confirmed).
 
 | ID | Question | Ask |
 | --- | --- | --- |
-| Q-070 | Your December list is: online booking and payment confirmation, a staff booking list, Arabic pages, staff logins and roles, a screen to type in bookings, and the 7-day email reminder. Which of these are also needed in December: guest accounts and sign-in, guests viewing, cancelling or changing bookings online, SADAD and Apple Pay (or cards only), hotel managers editing hotel information, monthly reports? (sets the December scope) | Yusuf |
-| Q-064 | In round 2 you wrote "Manager" for overriding a confirmation, cancelling, sending reminders, changing prices and seeing reports. Which of your five roles may do each? May head office also change a booking's dates? (blocks RULE-031; REQ-046) | Yusuf |
-| Q-050 | Do managers need two-factor login, yes or no? Who creates the managers' own logins? (blocks REQ-048) | Yusuf |
-| Q-065 | Do you and Fatima each have your own login that shows all six hotels, or do you share one login? (blocks REQ-066) | Yusuf |
-| Q-071 | You said the admin dashboard can wait a month or two, but head office wants one login that shows all six hotels "in a dashboard". Is a bookings list covering all six hotels enough for December? (blocks REQ-066) | Yusuf |
+| Q-046 | Should Saudi debit cards (for example mada) or other wallets also be supported? Does the 2-hour room hold apply to SADAD/bank transfers? (SADAD is MVP, REQ-076) | Yusuf |
+| Q-066 | What privacy and consent text must show at sign-up and at booking, and who writes it? Is that inside the 120,000 SAR? (guest accounts and sign-in are MVP) | Yusuf |
+| Q-063 | Who types in Booking.com/Agoda bookings during the first month, and who enters the 20-30 bookings that already exist before launch (REQ-079)? | Yusuf |
+| Q-047 | What happens if a guest abandons a booking before paying, or leaves halfway? | Yusuf |
+| Q-049 | Ask Ahmed: ZATCA registration, e-invoicing, Makkah/Medina rules, data residency? Still waiting on Ahmed's contact details (DEP-012), promised in rounds 3, 4 and 5 | Ahmed, via Yusuf |
 
-Also important, but not MVP: Q-049 (ZATCA, invoices and data rules, for Ahmed the accountant), Q-048 (how the budget splits), Q-068 (which payment service is used today), Q-069 (bookings that exist at launch) and Q-060 (which of the client's requests are in scope; the BA decides first).
+Also open, not MVP: Q-051 to Q-056, Q-058 to Q-060, Q-067, Q-072 (payment/pricing/support detail) and Q-073 (who manages DNS day to day — new this round, from the domain answer).
 
 ## Top risks
 
 | ID | Risk | Impact |
 | --- | --- | --- |
 | RISK-001 | Rooms could be double-booked if the platform and the booking sites do not share availability | high |
-| RISK-002 | The hard deadline (now end of December) and the fixed budget may not fit the full wanted scope | high |
-| RISK-005 | The 120,000 SAR budget also has to cover running costs, so less is left for building | high |
+| RISK-002 | The hard deadline and the fixed budget may not fit the full wanted scope — the MVP list has grown from 16 to 24 requirements | high |
+| RISK-005 | The 120,000 SAR budget also has to cover running costs; the split is known (80,000/40,000), but whether 80,000 SAR is enough for the now-larger MVP is not yet estimated | high |
 | RISK-006 | VAT, ZATCA registration and invoicing rules may add scope, time or cost that is not yet known | high |
 | RISK-008 | Card numbers are taken by phone and charged by hand, which may break card-payment security rules | high |
 
-RISK-007 (automatic sync with Booking.com and Agoda may need extra time, cost or a third-party service) is also high.
+RISK-007 (automatic sync with Booking.com and Agoda may need extra time, cost or a third-party service) is also high. RISK-003 (goal may not be measurable) now has a tracking method (Q-061) but it depends on a report not due until January (REQ-007).
 
 ## Recent decisions
 
 | ID | Date | Decision |
 | --- | --- | --- |
-| GATE-002 | 2026-09-28 | Phase 2 Discover: PARTIAL. Open risk: C4-01 (Saudi rules unknown). Reason not stated |
-| DEC-005 | 2026-09-28 | Reviewed `02-discover.md` section "Current systems, data and integrations" (AI-DRAFT → REVIEWED). Reason not stated |
-| DEC-004 | 2026-09-28 | Reviewed `02-discover.md` section "Current workflows" (AI-DRAFT → REVIEWED). Reason not stated |
-| DEC-003 | 2026-09-28 | Reviewed `02-discover.md` section "Current state" (AI-DRAFT → REVIEWED). Reason not stated |
-| DEC-002 | 2026-09-28 | Reviewed `02-discover.md` section "Stakeholders" (AI-DRAFT → REVIEWED). Reason not stated |
+| DEC-013 | 2026-09-28 | Reviewed `03-define.md` section "Key journeys" (AI-DRAFT → REVIEWED). Reason not stated |
+| DEC-012 | 2026-09-28 | Reviewed `03-define.md` section "Future workflows" (AI-DRAFT → REVIEWED). Reason not stated |
+| DEC-011 | 2026-09-28 | Reviewed `03-define.md` section "Integrations" (AI-DRAFT → REVIEWED). Reason not stated |
+| DEC-010 | 2026-09-28 | Reviewed `03-define.md` section "Business rules" (AI-DRAFT → REVIEWED). Reason not stated |
+| DEC-009 | 2026-09-28 | Reviewed `03-define.md` section "Non-goals" (AI-DRAFT → REVIEWED). Reason not stated |
+
+No new `DEC`, `CHG` or `GATE` entry since these; `/ba-extract` and `/ba-check` only add and update items, they do not decide anything. "Goals and success measures" and "User roles and permissions" are ready for a `DEC` entry via `/ba-approve section` whenever you choose.
 
 ## Input log
 
@@ -104,10 +106,12 @@ RISK-007 (automatic sync with Booking.com and Agoda may need extra time, cost or
 | client-answers-2026-09-28.md | 2026-09-28 | 2026-09-28 |
 | client-answers-round-2-2026-09-28.md | 2026-09-28 | 2026-09-28 |
 | client-answers-round-3-2026-09-28.md | 2026-09-28 | 2026-09-28 |
+| client-answers-round-4-2026-09-29.md | 2026-09-29 | 2026-09-29 |
+| client-answers-round-5-2026-09-29.md | 2026-09-29 | 2026-09-29 |
 
 ## Last check
 
-Run 4 · 2026-09-28 · Phase 2 (Discover) · 27 findings (high 1, medium 14, low 12) · 0 items became AI-CHECKED (no item changed since run 3) · Gate suggestion: PARTIAL is possible, with the Saudi tax and privacy rules, the December scope, the role mapping and the payment mechanics named as risks · Report: `checks/check-4-2026-09-28.md` (earlier: `checks/check-3-2026-09-28.md`, `checks/check-2-2026-09-28.md`, `checks/check-1-2026-09-28.md`). Gate 2 was recorded as PARTIAL (GATE-002). No check has been run for Phase 3 yet.
+Run 7 · 2026-09-29 · Phase 3 (Define) · 24 findings (high 1, medium 11, low 12) · 2 items became AI-CHECKED (RULE-036, RULE-037) · All three quote-formatting findings from check 6 closed (C6-02 REQ-078, C6-03 RULE-036, C6-04 RULE-037) · Only one high finding remains open: C7-01 (Saudi tax/privacy) · Gate suggestion: PARTIAL is possible — register data quality is clean (no open conflicts, no bad quotes); what's left is procedural (two sections ready for `/ba-approve section`) and the one third-party-dependent finding · Report: `checks/check-7-2026-09-29.md` (earlier: `checks/check-6-2026-09-29.md`, `checks/check-5-2026-09-29.md`, `checks/check-4-2026-09-28.md`, `checks/check-3-2026-09-28.md`, `checks/check-2-2026-09-28.md`, `checks/check-1-2026-09-28.md`).
 
 ## Notes
 
