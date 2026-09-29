@@ -166,6 +166,16 @@ Every decision, change and gate result, newest at the bottom of each section. Wr
 - alternatives: none
 - impact: Ten of the 11 Define sections are now reviewed. Only "Exceptions and edge cases" is still `AI-DRAFT`. Which settings count as configurable "policies" versus fixed rules is still open (check 6/7, C7-12).
 
+### DEC-016 · Reviewed 03-define.md section "Exceptions and edge cases"
+- date: 2026-09-29
+- decided-by: the BA
+- decision: Reviewed the "Exceptions and edge cases" section of `03-define.md`, refreshed first: the date-change, staff-password, account-closure-data and currency bullets were updated to match RULE-036, RULE-037, REQ-080 and REQ-079/Q-069 (they referenced RULE-028, REQ-059 and Q-050 as if still open, but those are resolved or superseded).
+- items: 03-define.md "Exceptions and edge cases" (AI-DRAFT → REVIEWED)
+- reason: not stated
+- evidence: `inputs/client-answers-round-4-2026-09-29.md`; `inputs/client-answers-round-5-2026-09-29.md`; `items.md` (RULE-036, RULE-037, REQ-080, REQ-079, Q-050, Q-063, Q-069)
+- alternatives: none
+- impact: All 11 Define sections are now reviewed. Gate 3's content is complete; what remains is check 7's open findings (C7-01 Saudi tax/privacy; C7-03 MVP acceptance criteria; C7-05 unprioritised requirements) and the still-open questions (Q-040/RULE-006's exact-7-day wording gap, C7-04; who resets a forgotten staff password; Q-063 who enters existing bookings).
+
 ## Change log (CHG)
 
 <!--

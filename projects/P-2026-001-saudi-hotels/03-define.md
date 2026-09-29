@@ -192,15 +192,15 @@ status: REVIEWED
 | Old website content | In, once | Photos, location, contact, descriptions, about 50 reviews | UNKNOWN | REQ-052, REQ-051 |
 
 ## Exceptions and edge cases [standard]
-status: AI-DRAFT
+status: REVIEWED
 
 - **Payments:** a payment fails (RULE-017). SADAD or a bank transfer confirms after the 2-hour hold (Q-046). A refund to a SADAD payment (Q-045). The rest of the payment is not paid before arrival, so the guest pays at the desk and staff mark it in the system (RULE-033, REQ-071). A card is declined on a phone booking: UNKNOWN. Cash is paid at the desk (RULE-035).
 - **Availability:** two guests want the last room (RULE-018). A booking-site booking arrives for a room already booked on the platform (PRB-006, RISK-001). A walk-in arrives and no room is free: UNKNOWN. Makkah Comfort outside Hajj season: what a guest sees is UNKNOWN (RULE-022, Q-054).
-- **Cancellation and changes:** cancelling exactly 7 days before, the arrival day, and changing to a cheaper period are not stated (RULE-006, Q-040, RULE-015). A guest leaves halfway (Q-047). A no-show (RULE-014). A guest lost the booking number (REQ-040).
+- **Cancellation and changes:** for date changes, RULE-036 now covers the boundaries: from 2 to 7 days before, the guest pays or forfeits the price difference (RULE-015); from the day before arrival onward, no change is allowed; none either once checked in. Cancelling exactly 7 days before, and on the arrival day, are still not stated for RULE-006 (the "up to" vs "more than" 7 days wording gap, check 4 C4-14). A guest leaves halfway (Q-047). A no-show (RULE-014). A guest lost the booking number (REQ-040).
 - **Booking made late:** less than 7 days before arrival needs a 50% deposit (RULE-012).
-- **Permissions:** a hotel manager or front desk user tries to see another hotel (REQ-065). Front desk tries to change dates or prices (RULE-031, RULE-030). A staff password is forgotten, or two-factor login fails (Q-050). Yusuf is away when an approval is needed (Q-052).
+- **Permissions:** a hotel manager or front desk user tries to see another hotel (REQ-065). Front desk tries to change dates or prices (RULE-036, RULE-030). A staff member forgets their password after initial setup: UNKNOWN (there is no two-factor login to fail — Q-050 rules that out). Yusuf is away when an approval is needed (Q-052).
 - **Empty states:** a new guest with no bookings, a search with no available rooms, a hotel with no rooms listed yet: UNKNOWN.
 - **Integrations:** the booking-site sync fails (RISK-007), the payment provider is down, an email or SMS does not send: all UNKNOWN.
-- **Data:** a guest closes an account while the data must be kept for 3 years (RULE-028, Q-041). A guest sees prices in SAR only or also in USD (REQ-059, Q-036).
+- **Data:** on account closure, personal data (email, phone, card) is deleted right away; only minimal booking-history data (dates, amount, guest name) is kept for 3 years, then deleted (RULE-037). Guests are always charged in SAR; international guests also see a USD reference at that day's rate (REQ-080).
 - **Devices and speed:** an older phone or a slow connection (REQ-056, REQ-072).
-- **Launch:** bookings that already exist on launch day (Q-069). The site fails at launch or out of hours (REQ-057, Q-059).
+- **Launch:** about 20-30 bookings already exist for December and January and must be entered before launch (REQ-079, Q-069); who enters them is still open (Q-063). The site fails at launch or out of hours (REQ-057, Q-059).
