@@ -12,6 +12,7 @@ status: empty
 
 | Criterion | Option A | Option B | Option C |
 | --- | --- | --- | --- |
+| Build, buy or configure | | | |
 | Summary | | | |
 | Business value | | | |
 | User value / UX quality | | | |
@@ -25,7 +26,7 @@ status: empty
 ## Chosen direction [light]
 status: empty
 
-The option chosen and the DEC ID that records it.
+The option chosen and the DEC ID that records it. State explicitly whether it is **build**, **buy** or **configure** — the estimate in `05-commit.md` depends on it.
 
 ## Validation checklist [light]
 status: empty

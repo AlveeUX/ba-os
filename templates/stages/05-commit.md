@@ -10,6 +10,7 @@ Section markers: **[light]** always done · **[standard]** at standard depth or 
 ## Readiness to estimate [light]
 status: empty
 
+- Is build, buy or configure decided (DEC ID)? If not, stop: the estimate would describe a different engagement.
 - Open `UNKNOWN` or `CONFLICT` items that affect MVP scope (IDs):
 - If any are listed, stop and resolve them first, or estimate them as a separate risk line.
 
