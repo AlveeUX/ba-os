@@ -15,6 +15,11 @@ Questions that are missed on most digital projects. `/ba-check` asks each one th
 - Who enters the initial data, and is there data to migrate from an old system?
 - What must be kept for audit, and for how long?
 - What personal data is collected, and what consent is needed?
+- Does everyone define the key numbers the same way (formula, unit, counted by number or by money)? Who owns each definition? (L-001)
+
+## Regulation and reporting
+- Which tax, e-invoicing or data-protection rules apply, and who on the client side can confirm them?
+- Must anything be reported to a government or industry authority, how often, and in what format?
 
 ## Money
 - Which payment methods, currencies and taxes apply?
@@ -29,6 +34,16 @@ Questions that are missed on most digital projects. `/ba-check` asks each one th
 - Who runs the system day to day, and what reports do they need?
 - What happens outside business hours?
 - What does support look like after launch?
+
+## Launch and cut-over
+- Does the new system replace something (a website, a spreadsheet, a manual process)? (L-002)
+- Will old and new run side by side, and for how long?
+- Is there a pilot (one location, one team, one month) before full rollout?
+- What is the fallback if launch fails, and who decides to use it?
+
+## Multiple locations
+- Which differences between locations, branches or teams are legitimate and must be kept, and which should be standardised? Who decides?
+- What does head office see compared with each location?
 
 ## Edge cases
 - Empty states: what does a new user or an empty list look like?
@@ -46,3 +61,6 @@ Questions that are missed on most digital projects. `/ba-check` asks each one th
 - Who signs off each phase, and how fast can they respond?
 - What content, logins or third-party accounts must the client provide, and by when?
 - What is explicitly out of scope?
+- Are we writing an RFP for the client, or responding to one? If responding: what sections, format and deadline does it require, and how will it be evaluated? (L-003)
+- Build, buy or configure: who decides, and by when? (L-004)
+- Is any answer or contact still missing after it was promised twice? Treat it as a risk, not a question. (L-005)

@@ -51,7 +51,7 @@ Fill `profile.md`:
 - **Input type** and **Deliverable expected**: from the user's answer to question 4. If the input is an RFP, RFQ or tender and we are responding to it, add this line to **Extra checks**: "RFP response: every RFP requirement and evaluation criterion goes in the compliance table in `templates/exports/rfp-response.md`."
 - **Size**: suggest one size and list the signals from `method/depth-by-size.md` that drive it, each with the input it came from. If information is too thin to size, write `size: unknown` and say what is missing.
 - **Depth per phase**: use the suggested depth for that size. For a simple project this is lite mode.
-- **Domain notes**: always list `knowledge/patterns/common-gaps.md`; add any domain pattern file whose name matches the project type; add up to three relevant lessons from `knowledge/lessons.md` by ID.
+- **Domain notes**: always list `knowledge/patterns/common-gaps.md`; add any domain pattern file whose name matches the project type or the industry (for example `hospitality.md` for a hotel booking site); add up to three relevant lessons from `knowledge/lessons.md` by ID.
 - **Extra checks**: areas the inputs show need attention (payments, personal data, multi-location, multi-language…).
 - Keep `status: AI-DRAFT` at the top.
 
