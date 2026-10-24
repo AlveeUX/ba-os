@@ -62,6 +62,7 @@ If that file is missing or empty, ask which project to use (list the folders in 
 - Never change the text of an item that is `REVIEWED`, `CONFIRMED` or `APPROVED`.
   Create a new item that supersedes it and tell the user.
 - Every status change above `AI-CHECKED` has a matching entry in `decisions.md`.
+- Lessons in `knowledge/lessons.md` follow the same rule: AI writes them as `AI-DRAFT` (through `/ba-learn`); only `/ba-approve lesson` sets `APPROVED` or `REJECTED`, and the lesson's history line is the record. Never change the text of an `APPROVED` lesson.
 
 ## Working on stage files
 
