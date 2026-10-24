@@ -8,10 +8,10 @@ Last updated: 2026-09-29
 
 | | |
 | --- | --- |
-| Current phase | 3. Define (gate not started, but **all 11 required `03-define.md` sections are now `REVIEWED`**, DEC-006 to DEC-016). Phase 1 and Phase 2 both ended PARTIAL on 2026-09-28 (GATE-001, GATE-002) |
-| Next required action | Run `/ba-check` again — this would be the first check since every Define section was reviewed, and could support a stronger gate suggestion than check 7's. Then record the gate with `/ba-approve gate 3 <result>`. The one thing likely to keep it at PARTIAL rather than a clean PASS: **C7-01** (Saudi tax, e-invoicing, privacy and card rules — Ahmed's contact still hasn't arrived after three rounds). Worth resolving first if you want a stronger result: the 10 MVP requirements still missing acceptance criteria (C7-03) and the register's 35 unprioritised requirements (C7-05) matter more for Gate 4 than Gate 3, so they don't have to block this gate. |
-| Blockers | No gate is `BLOCKED`. One high finding is open: **C7-01**, which depends on Ahmed, outside the project team. **No open `CONFLICT` items.** |
-| Overall confidence | medium, up from low — 119 of 202 open items are `KNOWN` (59%), every open conflict is resolved, all quote-quality findings are fixed, and now every Define section has been read and reviewed by the BA (not just AI-drafted), which is what Gate 3 actually asks for. Still holding it below `high`: no item itself is `REVIEWED` yet (only the sections that reference them), the MVP list has grown twice (16 → 24) against the same ~13-week deadline, 10 of those MVP requirements still lack acceptance criteria, and the one open high finding depends on a third party who has not delivered in three rounds. |
+| Current phase | 4. Shape (gate not started). Phases 1, 2 and 3 all ended PARTIAL (GATE-001, GATE-002, GATE-003) |
+| Next required action | `04-shape.md` is entirely empty — every section still says `status: empty`. Start with **Solution options** (compare 2-3 directions) and **Chosen direction** (a recorded decision with alternatives considered — Gate 4 needs this). Before or alongside that, close the gap Gate 4 will check for: **10 of the 24 MVP requirements still have no acceptance criteria** (check 8, C8-03: REQ-001, REQ-004, REQ-017, REQ-030, REQ-041, REQ-042, REQ-048, REQ-064, REQ-076, REQ-079) — Gate 4 requires every MVP REQ to have them. |
+| Blockers | No gate is `BLOCKED`. One high finding carries forward as an accepted risk from GATE-003: **C8-01** (Saudi tax, e-invoicing, privacy and card rules — still waiting on Ahmed's contact after three rounds). It does not block Shape directly, but it should be resolved before Commit, where the commercial terms and estimate get fixed. No open `CONFLICT` items. |
+| Overall confidence | medium — 119 of 202 open items are `KNOWN` (59%), zero conflicts, and Define closed with all 11 sections reviewed and a recorded PARTIAL gate. Shape itself has no data yet (`04-shape.md` is empty), so this reflects the strength of the foundation it will build on, not Shape's own progress. What would raise it to `high`: acceptance criteria on the remaining MVP requirements, a chosen solution direction recorded as a decision, and C8-01 resolved. |
 
 ## Project
 
@@ -19,9 +19,9 @@ Last updated: 2026-09-29
 | --- | --- |
 | Project | saudi hotels |
 | Client | Yusuf (owner; company name UNKNOWN). Makes the final decisions (RULE-002). His team: Fatima (head office manager: testing and approval 10 hours a week, day-to-day support after launch), Layla (translation and content, 5 hours a week), Yusuf (about 5 hours a week) (REQ-064, DEP-009, DEP-010, DEP-011) |
-| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile approved 2026-09-28, DEC-001; profile itself is now stale, C7-13) |
-| Business objective | GOAL-004: reach 50% of bookings direct, counted by money, by the end of the first year ("Dec 2026 to Dec 2027"), with milestones of 15-20% by end of December 2026 and 30% by end of Q1 2027 (Q-061). Direct share today is about 10% by number of bookings (ASM-003) and about 8-10% by money (Q-062). Booking sites take 15% commission (PRB-005). Section reviewed (DEC-014); item itself still `AI-DRAFT` |
-| Deadline | End of December is the "hard deadline" and go-live date (RULE-010). "4 months maximum" (RULE-001) is still on file and later; the two are not yet reconciled (C7-06) |
+| Type / size | Booking website with online payment, customer accounts and admin dashboard / complex (suggested; profile approved 2026-09-28, DEC-001; profile itself is now stale, C8-13) |
+| Business objective | GOAL-004: reach 50% of bookings direct, counted by money, by the end of the first year ("Dec 2026 to Dec 2027"), with milestones of 15-20% by end of December 2026 and 30% by end of Q1 2027 (Q-061). Direct share today is about 10% by number of bookings (ASM-003) and about 8-10% by money (Q-062). Section reviewed (DEC-014) |
+| Deadline | End of December is the "hard deadline" and go-live date (RULE-010). "4 months maximum" (RULE-001) is still on file and later; the two are not yet reconciled (C8-06) |
 | Budget signal | About 120,000 SAR (~$32,000), split roughly 80,000 SAR building / 40,000 SAR running and first-year support (Q-048) |
 
 ## Gates
@@ -47,7 +47,7 @@ Last updated: 2026-09-29
 | REJECTED | 0 |
 | SUPERSEDED | 28 |
 
-Total: 230 items. Unchanged since check 7 — no items were added or edited recording the three section approvals (DEC-014, DEC-015, DEC-016); those changed `03-define.md` and `decisions.md`, not `items.md`.
+Total: 230 items. Unchanged since check 8.
 
 ## Items by label (open items only)
 
@@ -62,7 +62,7 @@ Open items: 202. All 73 `UNKNOWN` are Q items. 55 have an answer recorded, and 1
 
 ## Top open questions
 
-MVP-related first. The MVP requirements are 24: REQ-001 to REQ-004, REQ-009, REQ-013, REQ-017, REQ-019, REQ-028, REQ-030, REQ-040 to REQ-042, REQ-048, REQ-053, REQ-064 to REQ-066, REQ-072, REQ-073, REQ-075, REQ-076, REQ-078 and REQ-079 (all proposed, none confirmed).
+MVP-related first. The MVP requirements are 24: REQ-001 to REQ-004, REQ-009, REQ-013, REQ-017, REQ-019, REQ-028, REQ-030, REQ-040 to REQ-042, REQ-048, REQ-053, REQ-064 to REQ-066, REQ-072, REQ-073, REQ-075, REQ-076, REQ-078 and REQ-079 (all proposed, none confirmed — confirming them is Shape/Commit work).
 
 | ID | Question | Ask |
 | --- | --- | --- |
@@ -90,11 +90,11 @@ RISK-007 (automatic sync with Booking.com and Agoda may need extra time, cost or
 
 | ID | Date | Decision |
 | --- | --- | --- |
-| DEC-016 | 2026-09-29 | Reviewed `03-define.md` section "Exceptions and edge cases" (AI-DRAFT → REVIEWED), refreshed first to match RULE-036, RULE-037, REQ-080, REQ-079. All 11 Define sections now reviewed |
-| DEC-015 | 2026-09-29 | Reviewed `03-define.md` section "User roles and permissions" (AI-DRAFT → REVIEWED), refreshed first with the round-4 permission matrix |
-| DEC-014 | 2026-09-29 | Reviewed `03-define.md` section "Goals and success measures" (AI-DRAFT → REVIEWED), refreshed first with the round-4/5 baseline and milestones |
+| GATE-003 | 2026-09-29 | Phase 3 Define: PARTIAL. Reason: "Saudi tax rules still pending". Open risk: C8-01 |
+| DEC-016 | 2026-09-29 | Reviewed `03-define.md` section "Exceptions and edge cases" (AI-DRAFT → REVIEWED). All 11 Define sections now reviewed |
+| DEC-015 | 2026-09-29 | Reviewed `03-define.md` section "User roles and permissions" (AI-DRAFT → REVIEWED) |
+| DEC-014 | 2026-09-29 | Reviewed `03-define.md` section "Goals and success measures" (AI-DRAFT → REVIEWED) |
 | DEC-013 | 2026-09-28 | Reviewed `03-define.md` section "Key journeys" (AI-DRAFT → REVIEWED). Reason not stated |
-| DEC-012 | 2026-09-28 | Reviewed `03-define.md` section "Future workflows" (AI-DRAFT → REVIEWED). Reason not stated |
 
 ## Input log
 
@@ -109,7 +109,7 @@ RISK-007 (automatic sync with Booking.com and Agoda may need extra time, cost or
 
 ## Last check
 
-Run 8 · 2026-09-29 · Phase 3 (Define) · 24 findings (high 1, medium 11, low 12), same substance as check 7, renumbered — no item changed · **All five Gate 3 criteria are now formally `met`** (the last two closed by DEC-014 and DEC-015) · Gate suggestion: PARTIAL is possible (carrying C8-01 as a named risk, same shape as GATE-001/002), though a PASS is equally defensible on the criteria alone if C8-01 is accepted as a risk carried into Shape — the BA's call via `/ba-approve gate 3 <result>` · Report: `checks/check-8-2026-09-29.md` (earlier: `checks/check-7-2026-09-29.md`, `checks/check-6-2026-09-29.md`, `checks/check-5-2026-09-29.md`, `checks/check-4-2026-09-28.md`, `checks/check-3-2026-09-28.md`, `checks/check-2-2026-09-28.md`, `checks/check-1-2026-09-28.md`).
+Run 8 · 2026-09-29 · Phase 3 (Define) · 24 findings (high 1, medium 11, low 12) · Gate suggestion: PARTIAL is possible (a PASS was equally defensible on the criteria alone) · **Recorded as GATE-003, PARTIAL**, with C8-01 as the named risk · Report: `checks/check-8-2026-09-29.md` (earlier: `checks/check-7-2026-09-29.md`, `checks/check-6-2026-09-29.md`, `checks/check-5-2026-09-29.md`, `checks/check-4-2026-09-28.md`, `checks/check-3-2026-09-28.md`, `checks/check-2-2026-09-28.md`, `checks/check-1-2026-09-28.md`). No check has been run for Phase 4 yet; `04-shape.md` is empty.
 
 ## Notes
 
