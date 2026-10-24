@@ -19,6 +19,7 @@ Then ask the user these questions in one message and wait for the answers:
 1. **Client name** (or "unknown").
 2. **Privacy level**: `public`, `internal` or `confidential`. Explain in one line: confidential projects are kept out of any online backup.
 3. **Client input**: have they already copied the client's files into a folder, or will they paste the brief as text now? Tell them which formats work best: `.md`, `.txt` and `.pdf` are read directly; a Word file should be saved as PDF first.
+4. **Input type and expected deliverable**: what kind of input is this (rough idea, existing website or app, Figma file, specification, or an RFP / RFQ / tender), and what does the client expect to get back from us (proposal, RFP response, estimate only…)? If it is an RFP, confirm in one line whether we are **responding** to it or **writing** it for the client — these are different documents.
 
 ## 2. Create the project folder
 
@@ -47,6 +48,7 @@ Read every file in `inputs/`, then `method/depth-by-size.md`, `knowledge/lessons
 Fill `profile.md`:
 
 - Basics you can support from the inputs. Leave a field empty rather than guess. Set `privacy`.
+- **Input type** and **Deliverable expected**: from the user's answer to question 4. If the input is an RFP, RFQ or tender and we are responding to it, add this line to **Extra checks**: "RFP response: every RFP requirement and evaluation criterion goes in the compliance table in `templates/exports/rfp-response.md`."
 - **Size**: suggest one size and list the signals from `method/depth-by-size.md` that drive it, each with the input it came from. If information is too thin to size, write `size: unknown` and say what is missing.
 - **Depth per phase**: use the suggested depth for that size. For a simple project this is lite mode.
 - **Domain notes**: always list `knowledge/patterns/common-gaps.md`; add any domain pattern file whose name matches the project type; add up to three relevant lessons from `knowledge/lessons.md` by ID.

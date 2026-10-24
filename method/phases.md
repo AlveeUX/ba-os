@@ -41,6 +41,7 @@ A gate passes because the **quality of information and reasoning is enough**, no
 Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `BLOCKED` (waiting on someone else).
 
 ### Gate 1 — Intake
+- The input type and the expected deliverable are recorded in `profile.md` and `01-intake.md` (for an RFP: whether we respond to it or write it).
 - The business reason for the project is stated in the client's words (a `KNOWN` GOAL or PRB).
 - The requested solution is recorded separately from the underlying need.
 - First risks, assumptions and questions exist as items.

@@ -6,6 +6,17 @@ Gate question: *Is this worth analysing? Proceed, pause or ask for more informat
 Section markers: **[light]** always done · **[standard]** at standard depth or deeper · **[deep]** at deep depth only.
 Reference item IDs instead of repeating their text. Each section carries its own status line.
 
+## Input and expected deliverable [light]
+status: empty
+
+| Question | Answer |
+| --- | --- |
+| What did we receive (brief, website, app, Figma file, specification, RFP / RFQ)? | |
+| Who issued it? | |
+| What must we send back, in what format, and by when? | |
+| If it is an RFP: are we responding to it, or writing it for the client? | |
+| Evaluation criteria (if the client or RFP states them) | |
+
 ## Opportunity summary [light]
 status: empty
 
