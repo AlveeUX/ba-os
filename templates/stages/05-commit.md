@@ -34,6 +34,36 @@ status: empty
 
 Overall confidence and the three assumptions that would change it most:
 
+## Rate card [standard]
+status: empty
+
+The rates used to turn effort into price. **You enter every rate**; AI never invents one.
+
+Hours in one working day: 
+
+| Role | Rate per day (currency) | Source (your rate card, or assumed) | Entered by |
+| --- | --- | --- | --- |
+| | | | |
+
+## Cost range by phase [standard]
+status: empty
+
+Built from the work breakdown above and the rate card. Low uses the low hours, high uses the high hours. Never a single number.
+
+| Phase | Hours low | Hours high | Cost low | Cost high | Confidence |
+| --- | --- | --- | --- | --- | --- |
+| | | | | | |
+| **Total** | | | | | |
+
+What the price includes and excludes (for example hosting, licences, translation, support):
+
+## Payment milestones [standard]
+status: empty
+
+| Milestone | % of total | Trigger (what the client must accept first) |
+| --- | --- | --- |
+| | | |
+
 ## Engagement structure [standard]
 status: empty
 
