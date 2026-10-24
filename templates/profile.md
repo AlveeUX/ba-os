@@ -13,6 +13,8 @@ This file tells every `/ba-` command how to treat this project. `/ba-start` draf
 | Client | |
 | Industry | |
 | Project type | (website, web app, mobile app, SaaS, ERP, CRM, e-commerce, marketplace, internal tool…) |
+| Input type | (rough idea, existing website or app, Figma file, specification, client RFP / RFQ / tender) |
+| Deliverable expected | (proposal, RFP response, estimate only, discovery report…) and who receives it |
 | Project owner (BA) | |
 | Started | {{DATE}} |
 | Deadline (if given) | |

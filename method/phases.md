@@ -32,15 +32,18 @@ The method never changes between projects. **The depth changes** (see `method/de
 | Align | Create shared understanding | Handoff pack, walkthrough notes, sign-offs |
 | Deliver | Guard requirements during build | Change classification and impact analysis |
 | Verify | Prove the build meets the need | Trace from goal to outcome; UAT results |
-| Learn | Capture what happened | Lessons, wrong assumptions, estimate accuracy |
-| Loop | Improve BA-OS itself | Updated templates, checklists and skills |
+| Learn | Capture what happened | Lessons, wrong assumptions, estimate accuracy (drafted by `/ba-learn`) |
+| Loop | Improve BA-OS itself | Updated templates, checklists and skills (proposed by `/ba-learn`, applied when you agree) |
 
 ## Gate criteria
 
 A gate passes because the **quality of information and reasoning is enough**, not because a file exists.
 Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `BLOCKED` (waiting on someone else).
 
+**Every gate** also needs the phase's stage-file sections at the profile's depth to be written (no section still `status: empty`). A gate can be `PARTIAL` with an empty section only if you name that section as an open risk.
+
 ### Gate 1 — Intake
+- The input type and the expected deliverable are recorded in `profile.md` and `01-intake.md` (for an RFP: whether we respond to it or write it).
 - The business reason for the project is stated in the client's words (a `KNOWN` GOAL or PRB).
 - The requested solution is recorded separately from the underlying need.
 - First risks, assumptions and questions exist as items.
@@ -66,6 +69,7 @@ Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `B
 - The validation checklist in `04-shape.md` is completed at the profile's depth.
 - Every FEAT has a parent REQ and a `scope` value.
 - Every MVP REQ has acceptance criteria.
+- At standard depth or deeper, every MVP FEAT has its screens in the Screen inventory.
 - `OUT` scope is written explicitly, not implied.
 - No MVP item is still `UNKNOWN` or `CONFLICT`.
 
@@ -73,6 +77,7 @@ Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `B
 - Every MVP FEAT appears in the work breakdown.
 - Every estimate line has a range, a confidence level and its assumptions; you entered or accepted every number.
 - Dependencies and client responsibilities are listed in the proposal.
+- If the deliverable is a proposal or RFP response, a draft exists in `exports/rfp-response.md`; for an RFP, every requirement and evaluation criterion appears in its compliance table.
 - The baseline items are `APPROVED`.
 
 ### Gate 6 — Deliver and learn
@@ -90,6 +95,12 @@ A `FAIL` sends work back to the phase that caused the problem. Common loop-backs
 
 Every loop-back is recorded in `decisions.md` as a `GATE` entry with result `FAIL` and the phase you return to.
 
+## Learning at any gate
+
+Learn and Loop do not have to wait for Phase 6. Run `/ba-learn` after any gate, and always when a project stops early (lost bid, paused, cancelled, or a practice exercise), so its lessons are not lost. `/ba-learn` can also read a project done outside BA-OS.
+
+Lessons start as `AI-DRAFT` in `knowledge/lessons.md`. You approve them with `/ba-approve lesson …`. `/ba-start` and `/ba-check` use only `APPROVED` lessons.
+
 ## Next-action rules (used by `/ba-status`)
 
 Suggest the first rule that applies:
@@ -98,7 +109,8 @@ Suggest the first rule that applies:
 1. A file in `inputs/` has not been extracted → run `/ba-extract`.
 2. There are `AI-DRAFT` items with no check since they were created → run `/ba-check`.
 3. There are open findings from the last check → resolve the top findings (list them).
-4. There are unanswered `Q` items that block the current phase → send them to the client (list them).
-5. There are `AI-CHECKED` items → review them and run `/ba-approve`.
-6. The current phase's stage file has empty required sections → work on them (name them).
-7. Everything above is clear → run `/ba-check` for a gate readiness check, then record the gate with `/ba-approve gate <n> <result>`.
+4. There are unanswered `Q` items that block the current phase → send them to the client (list them). If any has been open for two or more client rounds, say so and suggest turning it into a RISK or a separately priced line instead of asking again.
+5. A question in the Research plan of `02-discover.md` blocks the current or next gate and has no findings → suggest researching it (name it), or asking the client.
+6. There are `AI-CHECKED` items → review them and run `/ba-approve`.
+7. The current phase's stage file has empty required sections → work on them (name them).
+8. Everything above is clear → run `/ba-check` for a gate readiness check, then record the gate with `/ba-approve gate <n> <result>`.

@@ -1,7 +1,7 @@
 ---
 name: ba-approve
-description: Record the BA's human decision in the active BA-OS project — review, confirm, approve or reject items, record client answers, approve the profile or a stage-file section, or record a gate result — and log it in decisions.md.
-argument-hint: "<IDs> <reviewed|confirmed|approved|rejected> [note]  |  gate <n> <pass|partial|fail|blocked> [reason]  |  profile  |  section <file> <heading> <reviewed|approved>"
+description: Record the BA's human decision in the active BA-OS project — review, confirm, approve or reject items, record client answers, approve the profile or a stage-file section, record a gate result, or approve or reject a lesson in knowledge/lessons.md — and log it.
+argument-hint: "<IDs> <reviewed|confirmed|approved|rejected> [note]  |  gate <n> <pass|partial|fail|blocked> [reason]  |  profile  |  section <file> <heading> <reviewed|approved>  |  lesson <L-IDs> <approved|rejected> [note]"
 disable-model-invocation: true
 allowed-tools:
   - Read
@@ -32,6 +32,9 @@ Match it to one of these forms. If it matches none, or anything is ambiguous, sh
 | A gate | `/ba-approve gate 2 partial "Two roles still unconfirmed"` |
 | The profile | `/ba-approve profile` |
 | A stage-file section | `/ba-approve section 03-define "Problem statement" reviewed` |
+| A section of an export | `/ba-approve section exports/rfp-response "Scope of work" reviewed` |
+| Lessons | `/ba-approve lesson L-001 L-002 approved` |
+| A lesson with a reason | `/ba-approve lesson L-003 rejected "Too specific to one client"` |
 
 IDs can be separated by spaces or commas. A range such as `REQ-010..REQ-015` is allowed.
 
@@ -46,6 +49,10 @@ Read `items.md` and `decisions.md`. For each item:
 - `approved` on an item labelled `UNKNOWN` or `CONFLICT`: warn that it is not settled and ask to confirm.
 - `confirmed` requires the client's answer or confirmation text. For a Q item, the note is the answer. If no note is given, ask for it.
 - `rejected` requires a reason. If no note is given, ask for it.
+
+For a **lesson**: it must exist in `knowledge/lessons.md` and be `AI-DRAFT`. `rejected` requires a reason. Before approving, re-read the lesson for client names, people's names, prices and personal data; if any are present, say so and stop.
+
+**Reason:** if the user gave no reason for a decision (items, a section, the profile, a gate, a lesson), ask once: *"One line on why? (press Enter to skip)"*. Use their words. Write `not stated` only if they skip.
 
 For a **gate**: read the latest report in `checks/`. If there is no check since the last change to `items.md`, suggest running `/ba-check gate` first, and ask whether to continue anyway. `partial` needs the risks being accepted; `fail` needs the phase to go back to; `blocked` needs who or what it is waiting on. Ask for anything missing.
 
@@ -62,7 +69,9 @@ Then show the user one short summary of exactly what will change (item, old stat
 
 **Profile**: change `status: AI-DRAFT` at the top of `profile.md` to `status: APPROVED`.
 
-**Section**: change the `status:` line under that heading in the stage file. Check the heading exists first.
+**Section**: change the `status:` line under that heading in the stage file (or the file in `exports/`). Check the heading exists first.
+
+**Lesson**: in `knowledge/lessons.md`, set the lesson's `status`, add `reason: <note>` if rejected, and add a history line `<date> AI-DRAFT → <new> by the BA via /ba-approve`. Lessons belong to BA-OS, not to one project, so no `DEC` entry is written; the history line is the record.
 
 **Gate**: update the Gates table in `control.md` (result and date). If `fail`, set the current phase back to the phase named.
 
@@ -70,8 +79,9 @@ Then show the user one short summary of exactly what will change (item, old stat
 
 - Items, profile or section → a `DEC` entry under "Decision log".
 - Gate → a `GATE` entry under "Gate records", with `check-report` set to the latest report file.
+- Lesson → no entry (see above).
 
-Use the formats shown in the comments in `decisions.md`. `decided-by`: the BA. Write the reason in the user's words; if they gave none, write `not stated`.
+Use the formats shown in the comments in `decisions.md`. `decided-by`: the BA. Write the reason in the user's words (asked for in step 2); write `not stated` only if they chose to skip.
 
 ## 4. Save a history point
 
@@ -82,8 +92,10 @@ git add -A
 git commit -m "<project ID>: <DEC or GATE id> <one-line summary>"
 ```
 
+For a lesson, use `knowledge: <L-IDs> <approved or rejected>` as the message.
+
 Confidential projects are ignored by Git, so only the shared BA-OS files are committed; that is expected.
 
 ## 5. Report back
 
-Two or three lines: what was recorded, the decision ID, and the next step (for gates: the next phase and its stage file).
+Two or three lines: what was recorded, the decision ID, and the next step (for gates: the next phase and its stage file). After a gate, also mention that `/ba-learn` can capture lessons so far — especially after a `PARTIAL`, `FAIL` or `BLOCKED` result, or if the project is stopping.

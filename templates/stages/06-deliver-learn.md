@@ -45,4 +45,4 @@ status: empty
 - What worked well:
 - What to change in BA-OS (templates, checklists, skills):
 
-Copy the lessons worth keeping to `knowledge/lessons.md` (without client names, prices or personal data).
+Run `/ba-learn` to draft the lessons worth keeping into `knowledge/lessons.md` (without client names, prices or personal data) and to get a list of proposed changes to BA-OS. Approve the lessons with `/ba-approve lesson <IDs> approved`.

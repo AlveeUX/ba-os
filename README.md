@@ -2,7 +2,7 @@
 
 BA-OS helps you take a client request from "I have a brief" to an approved, scoped and estimated product, without losing the reasoning in between. Every project lives in one folder. AI drafts and checks; **you** decide, and every decision is written down.
 
-V1 is the manual core: the method, templates, one items register and five commands. AI helpers, research and estimation commands come in V2 and V3.
+V1 is the manual core: the method, templates, one items register and six commands. AI helpers, research and estimation commands come in V2 and V3.
 
 ---
 
@@ -53,11 +53,11 @@ claude
 
 The first time, Claude Code asks whether you trust this folder. Choose **Yes** — the `/ba-` commands only load in a trusted folder.
 
-Type `/ba` and you should see the five commands appear. You are ready.
+Type `/ba` and you should see the six commands appear. You are ready.
 
 ---
 
-## 2. The five commands
+## 2. The six commands
 
 Type these **inside Claude Code** (after running `claude`), not in plain PowerShell.
 
@@ -68,6 +68,7 @@ Type these **inside Claude Code** (after running `claude`), not in plain PowerSh
 | `/ba-check` | Critic review + gate readiness. Writes a report to `checks/` | `/ba-check` |
 | `/ba-approve …` | Records your decision: review, confirm, approve, reject, answer a question, pass a gate | `/ba-approve REQ-003 REQ-004 reviewed` |
 | `/ba-status` | Rebuilds `control.md` and tells you the next action | `/ba-status` |
+| `/ba-learn` | Turns a project (or a project done outside BA-OS) into lessons in `knowledge/lessons.md` and proposes improvements to BA-OS. Works at any gate | `/ba-learn` |
 
 More `/ba-approve` examples:
 
@@ -77,6 +78,7 @@ More `/ba-approve` examples:
 /ba-approve profile
 /ba-approve section 03-define "Problem statement" reviewed
 /ba-approve gate 1 pass "Worth doing; owner is the decision maker"
+/ba-approve lesson L-001 L-002 approved
 ```
 
 You can also just talk to Claude Code normally, for example: *"Draft the stakeholders section of 02-discover"* or *"Research what competitors in this market offer"*. It follows the house rules in `CLAUDE.md`.
@@ -106,8 +108,11 @@ Accept what is good → /ba-approve <IDs> reviewed
 Send open questions to the client → record answers with /ba-approve Q-… confirmed "…"
 Work on the stage file for the current phase (ask Claude to draft sections)
 When the phase feels done → /ba-check gate → /ba-approve gate <n> <result>
+Project finished, paused or lost? → /ba-learn → /ba-approve lesson <IDs> approved
 Lost? → /ba-status
 ```
+
+**Making BA-OS smarter after every project:** run `/ba-learn`. It drafts lessons (wrong assumptions, questions asked too late, problems that kept coming back) and proposes exact changes to the checklists, templates and commands. You choose which changes to apply, then approve the lessons. The next `/ba-start` and `/ba-check` use them automatically.
 
 **Seeing exactly what the AI changed:** click the **Source Control** icon in Cursor's left sidebar (or press `Ctrl+Shift+G`). Every changed line is highlighted. `/ba-approve` saves a history snapshot each time you record a decision.
 
@@ -120,9 +125,9 @@ Lost? → /ba-status
 | `CLAUDE.md` | House rules Claude reads every session | Yes, to change rules for all projects |
 | `method/` | The BA method: phases, gates, labels, requirement standard, depth by size, glossary | Yes, to improve the method |
 | `templates/` | Blank project files | Yes, to change what new projects start with |
-| `knowledge/` | Lessons and checklists that improve over time | Yes, after each project |
+| `knowledge/` | Lessons and checklists that improve over time | Yes, after each project (`/ba-learn` drafts the changes) |
 | `projects/` | Your projects (`_confidential/` is never backed up online) | Through the commands, and by hand |
-| `.claude/skills/` | The five commands, one folder each | Yes, to change how a command works |
+| `.claude/skills/` | The six commands, one folder each | Yes, to change how a command works |
 | `.claude/settings.json` | What Claude may do without asking (it can never push online or delete files) | Rarely |
 | `samples/` | Made-up inputs to practise with | No |
 
@@ -138,7 +143,9 @@ Everything is plain text. Change a file, save it, and the change applies the nex
 | Rules for every project | `CLAUDE.md` or a file in `method/` |
 | Behaviour for one project | That project's `profile.md` (Domain notes, Extra checks) |
 | Questions BA-OS always checks | `knowledge/patterns/common-gaps.md` |
-| What a new project starts with | `templates/` |
+| Questions for one industry | a file in `knowledge/patterns/` (for example `hospitality.md`) |
+| Lessons from a finished project | run `/ba-learn` |
+| What a new project starts with | `templates/` (the client-facing proposal is `templates/exports/rfp-response.md`) |
 
 Easiest way: ask Claude Code, for example *"Change /ba-extract so every REQ also gets a user role"*. Review the change in Source Control before keeping it. Git lets you undo any change.
 

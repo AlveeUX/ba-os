@@ -12,6 +12,7 @@ status: empty
 
 | Criterion | Option A | Option B | Option C |
 | --- | --- | --- | --- |
+| Build, buy or configure | | | |
 | Summary | | | |
 | Business value | | | |
 | User value / UX quality | | | |
@@ -25,7 +26,7 @@ status: empty
 ## Chosen direction [light]
 status: empty
 
-The option chosen and the DEC ID that records it.
+The option chosen and the DEC ID that records it. State explicitly whether it is **build**, **buy** or **configure** — the estimate in `05-commit.md` depends on it.
 
 ## Validation checklist [light]
 status: empty
@@ -69,3 +70,14 @@ status: empty
 | OUT (explicitly excluded) | |
 
 Dependencies, assumptions and risks the baseline relies on (IDs):
+
+## Screen inventory [standard]
+status: empty
+
+Every screen the scope needs, so UX and UI effort can be estimated per screen in `05-commit.md`. One row per screen; a screen used by several roles is listed once.
+
+| Screen | Role(s) | FEAT | States (empty, loading, error, success) | Complexity (S / M / L) | Notes (RTL, mobile, accessibility) |
+| --- | --- | --- | --- | --- | --- |
+| | | | | | |
+
+Complexity guide: **S** shows information or a simple form; **M** has several states, a list with filters, or a multi-step form; **L** has complex logic, many states, or live data from an integration.
