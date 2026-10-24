@@ -67,6 +67,7 @@ Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `B
 - The validation checklist in `04-shape.md` is completed at the profile's depth.
 - Every FEAT has a parent REQ and a `scope` value.
 - Every MVP REQ has acceptance criteria.
+- At standard depth or deeper, every MVP FEAT has its screens in the Screen inventory.
 - `OUT` scope is written explicitly, not implied.
 - No MVP item is still `UNKNOWN` or `CONFLICT`.
 

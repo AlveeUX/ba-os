@@ -24,6 +24,8 @@ Disciplines: UX research, UX design, UI design, frontend, backend, database, int
 
 `Entered by` is `you` or `AI-DRAFT`. AI may suggest ranges when asked; they stay `AI-DRAFT` until you accept them.
 
+UX and UI design lines reference screens from the **Screen inventory** in `04-shape.md` (for example "Booking form — M").
+
 ## Estimate summary [light]
 status: empty
 
