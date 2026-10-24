@@ -74,6 +74,7 @@ Gate results: `PASS`, `PARTIAL` (proceed with named risks), `FAIL` (go back), `B
 - Every MVP FEAT appears in the work breakdown.
 - Every estimate line has a range, a confidence level and its assumptions; you entered or accepted every number.
 - Dependencies and client responsibilities are listed in the proposal.
+- If the deliverable is a proposal or RFP response, a draft exists in `exports/rfp-response.md`; for an RFP, every requirement and evaluation criterion appears in its compliance table.
 - The baseline items are `APPROVED`.
 
 ### Gate 6 — Deliver and learn

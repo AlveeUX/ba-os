@@ -61,6 +61,8 @@ Do not create items yet. Items come from `/ba-extract`.
 
 For each phase whose depth is not `skip`, copy its template from `templates/stages/` into the project folder (same file name), replacing the placeholders. Fill the **Depth** column of the Gates table in `control.md`.
 
+If **Deliverable expected** is a proposal or an RFP response, also copy `templates/exports/rfp-response.md` to `exports/rfp-response.md`, replacing the placeholders. If we are not responding to an RFP, delete the "RFP compliance table" section from the copy.
+
 ## 6. Make it the active project
 
 Write the project folder path (for example `projects/P-2026-001-hotel-booking`) as the only line of `projects/active.md`.
